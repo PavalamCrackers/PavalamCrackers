@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Sparkler",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/sparkler.jpg",
+        "price": 5.00,
+        "description": "A colorful sparkler that lights up the night with vibrant colors."
+    },
+    {
+        "id": 2,
+        "name": "Flower Pot",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/flower-pot.jpg",
+        "price": 10.00,
+        "description": "A beautiful flower pot that bursts into a shower of sparks."
+    },
+    {
+        "id": 3,
+        "name": "Rocket",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/rocket.jpg",
+        "price": 15.00,
+        "description": "A classic rocket that soars high into the sky with a loud bang."
+    },
+    {
+        "id": 4,
+        "name": "Cracker Pack",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/cracker-pack.jpg",
+        "price": 20.00,
+        "description": "A pack of assorted crackers for a grand celebration."
+    },
+    {
+        "id": 5,
+        "name": "Fountain",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/fountain.jpg",
+        "price": 12.00,
+        "description": "A fountain that creates a beautiful display of sparks and colors."
+    },
+    {
+        "id": 6,
+        "name": "Ground Spinner",
+        "image": "https://onlycrackers.com/wp-content/uploads/2024/08/ground-spinner.jpg",
+        "price": 8.00,
+        "description": "A spinning cracker that creates a dazzling display on the ground."
+    }
+]
