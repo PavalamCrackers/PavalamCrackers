@@ -3,8 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Products | Pavalam Crackers</title>
+  <title>Search Products | Pavalam Crackers</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .search-page {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .search-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .search-results-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+    .search-meta {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.2rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -38,118 +68,28 @@
           <li><a href="about.html">About Us</a></li>
         </ul>
         <form class="search-form" id="searchForm" action="search.html" method="get" role="search" autocomplete="off">
-  <input type="text" class="search-bar" id="searchBar" name="q" placeholder="Search crackers..." aria-label="Search crackers" />
-  <button type="submit" class="search-btn" aria-label="Search">
-    <!-- SVG search icon -->
-  </button>
-</form>
+          <input type="text" class="search-bar" id="searchBar" name="q" placeholder="Search crackers..." aria-label="Search crackers" />
+          <button type="submit" class="search-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="9" cy="9" r="7" stroke="#e65100" stroke-width="2"/>
+              <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </form>
         <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- One Sound Crackers -->
-    <section class="products" id="one-sound">
-      <h2>One Sound Crackers</h2>
-      <div class="product-carousel" id="oneSoundCarousel"></div>
-    </section>
-
-    <!-- Ground Chakkar -->
-    <section class="products" id="ground-chakkar">
-      <h2>Ground Chakkar</h2>
-      <div class="product-carousel" id="groundChakkarCarousel"></div>
-    </section>
-
-    <!-- Flower Pots -->
-    <section class="products" id="flower-pots">
-      <h2>Flower Pots</h2>
-      <div class="product-carousel" id="flowerPotsCarousel"></div>
-    </section>
-
-    <!-- Bomb -->
-    <section class="products" id="bomb">
-      <h2>Bomb</h2>
-      <div class="product-carousel" id="bombCarousel"></div>
-    </section>
-
-    <!-- Special Bijili Pack -->
-    <section class="products" id="bijili-pack">
-      <h2>Special Bijili Pack</h2>
-      <div class="product-carousel" id="bijiliPackCarousel"></div>
-    </section>
-
-    <!-- Twirling Star -->
-    <section class="products" id="twirling-star">
-      <h2>Twirling Star</h2>
-      <div class="product-carousel" id="twirlingStarCarousel"></div>
-    </section>
-
-    <!-- Kids Zone -->
-    <section class="products" id="kids-zone">
-      <h2>Kids Zone</h2>
-      <div class="product-carousel" id="kidsZoneCarousel"></div>
-    </section>
-
-    <!-- Kids Fountains -->
-    <section class="products" id="kids-fountains">
-      <h2>Kids Fountains</h2>
-      <div class="product-carousel" id="kidsFountainsCarousel"></div>
-    </section>
-
-    <!-- Hold on Hand -->
-    <section class="products" id="hold-on-hand">
-      <h2>Hold on Hand</h2>
-      <div class="product-carousel" id="holdOnHandCarousel"></div>
-    </section>
-
-    <!-- Colors in Sky -->
-    <section class="products" id="colors-sky">
-      <h2>Colors in Sky</h2>
-      <div class="product-carousel" id="colorsSkyCarousel"></div>
-    </section>
-
-    <!-- Mega Sky Shot -->
-    <section class="products" id="mega-sky-shot">
-      <h2>Mega Sky Shot</h2>
-      <div class="product-carousel" id="megaSkyShotCarousel"></div>
-    </section>
-
-    <!-- Repeating Shots -->
-    <section class="products" id="repeating-shots">
-      <h2>Repeating Shots</h2>
-      <div class="product-carousel" id="repeatingShotsCarousel"></div>
-    </section>
-
-    <!-- Colorful Night Crackers -->
-    <section class="products" id="colorful-night">
-      <h2>Colorful Night Crackers</h2>
-      <div class="product-carousel" id="colorfulNightCarousel"></div>
-    </section>
-
-    <!-- Wala -->
-    <section class="products" id="wala">
-      <h2>Wala</h2>
-      <div class="product-carousel" id="walaCarousel"></div>
-    </section>
-
-    <!-- Sparklers -->
-    <section class="products" id="sparklers">
-      <h2>Sparklers</h2>
-      <div class="product-carousel" id="sparklersCarousel"></div>
-    </section>
-
-    <!-- Match Boxes -->
-    <section class="products" id="match-boxes">
-      <h2>Match Boxes</h2>
-      <div class="product-carousel" id="matchBoxesCarousel"></div>
-    </section>
-
-    <!-- Gift Boxes -->
-    <section class="products" id="gift-boxes">
-      <h2>Gift Boxes</h2>
-      <div class="product-carousel" id="giftBoxesCarousel"></div>
-    </section>
+  <main class="search-page">
+    <div class="search-header">
+      <h1>Search Results</h1>
+      <div class="search-meta" id="searchMeta">Showing results for: <span id="searchTerm"></span></div>
+    </div>
+    
+    <div class="search-results-container" id="searchResults">
+      <!-- Results will be populated here by JavaScript -->
+    </div>
   </main>
 
   <footer>
@@ -187,6 +127,7 @@
       <img src="" alt="Product Image" id="modalImg" />
     </div>
   </div>
-  <script src="js/script.js"></script>
+  
+  <script src="js/search.js"></script>
 </body>
 </html>

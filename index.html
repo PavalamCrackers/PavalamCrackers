@@ -17,25 +17,31 @@
           <li class="dropdown">
             <a href="products.html" class="dropdown-toggle">Products</a>
             <ul class="dropdown-content">
-              <li><a href="products.html#flower-pots">Flower Pots</a></li>
-              <li><a href="products.html#ground-chakkars">Ground Chakkars</a></li>
-              <li><a href="products.html#rockets">Rockets</a></li>
-              <li><a href="products.html#sparklers">Sparklers</a></li>
-              <li><a href="products.html#atom-bombs">Atom Bombs</a></li>
-              <li><a href="products.html#kids-special">Kids Special</a></li>
-              <li><a href="products.html#gift-boxes">Gift Boxes</a></li>
-            </ul>
+  <li><a href="products.html#one-sound">One Sound Crackers</a></li>
+  <li><a href="products.html#ground-chakkar">Ground Chakkar</a></li>
+  <li><a href="products.html#flower-pots">Flower Pots</a></li>
+  <li><a href="products.html#bomb">Bomb</a></li>
+  <li><a href="products.html#bijili-pack">Special Bijili Pack</a></li>
+  <li><a href="products.html#twirling-star">Twirling Star</a></li>
+  <li><a href="products.html#kids-zone">Kids Zone</a></li>
+  <li><a href="products.html#kids-fountains">Kids Fountains</a></li>
+  <li><a href="products.html#hold-on-hand">Hold on Hand</a></li>
+  <li><a href="products.html#colors-sky">Colors in Sky</a></li>
+  <li><a href="products.html#mega-sky-shot">Mega Sky Shot</a></li>
+  <li><a href="products.html#repeating-shots">Repeating Shots</a></li>
+  <li><a href="products.html#colorful-night">Colorful Night Crackers</a></li>
+  <li><a href="products.html#wala">Wala</a></li>
+  <li><a href="products.html#sparklers">Sparklers</a></li>
+  <li><a href="products.html#match-boxes">Match Boxes</a></li>
+  <li><a href="products.html#gift-boxes">Gift Boxes</a></li>
+</ul>
           </li>
           <li><a href="about.html">About Us</a></li>
         </ul>
-<form class="search-form" id="searchForm" role="search" autocomplete="off">
-  <input type="text" class="search-bar" id="searchBar" placeholder="Search crackers..." aria-label="Search crackers" />
+<form class="search-form" id="searchForm" action="search.html" method="get" role="search" autocomplete="off">
+  <input type="text" class="search-bar" id="searchBar" name="q" placeholder="Search crackers..." aria-label="Search crackers" />
   <button type="submit" class="search-btn" aria-label="Search">
     <!-- SVG search icon -->
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="9" cy="9" r="7" stroke="#e65100" stroke-width="2"/>
-      <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
-    </svg>
   </button>
 </form>
       </nav>
@@ -43,43 +49,46 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-slider" id="heroSlider">
-        <div class="hero-slide active">
-          <img src="images/hero1.jpg" alt="Diwali Fireworks" />
-          <div class="hero-caption">
-            Celebrate Diwali with the brightest crackers from Sivakasi!
-            <br />
-            <a href="products.html" class="hero-cta">Shop Now</a>
-          </div>
-        </div>
-        <div class="hero-slide">
-          <img src="images/hero2.jpg" alt="Colorful Crackers" />
-          <div class="hero-caption">
-            Safe, vibrant, and affordable fireworks for every family.
-            <br />
-            <a href="products.html#gift-boxes" class="hero-cta">Gift Boxes</a>
-          </div>
-        </div>
-        <div class="hero-slide">
-          <img src="images/hero3.jpg" alt="Kids Special Crackers" />
-          <div class="hero-caption">
-            Kids' Special: Joyful, safe, and fun crackers for little ones!
-            <br />
-            <a href="products.html#kids-special" class="hero-cta">Kids Special</a>
-          </div>
-        </div>
-        <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
-        <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+      <section class="promo-carousel">
+  <div class="promo-slider" id="promoSlider">
+    <div class="promo-slide active">
+      <img src="images/diwali-sale.jpg" alt="Diwali Special Discounts" />
+      <div class="promo-content">
+        <h2>Diwali Special Offers</h2>
+        <p>Get up to 50% off on all crackers - Limited time only!</p>
+        <a href="products.html" class="promo-btn">Shop Now</a>
       </div>
-    </section>
+    </div>
+    <div class="promo-slide">
+      <img src="images/festival-combo.jpg" alt="Festival Combo Packs" />
+      <div class="promo-content">
+        <h2>Festival Combo Packs</h2>
+        <p>Exclusive combos with extra 10% discount</p>
+        <a href="products.html#gift-boxes" class="promo-btn">View Combos</a>
+      </div>
+    </div>
+    <div class="promo-slide">
+      <img src="images/new-arrivals.jpg" alt="New Arrivals" />
+      <div class="promo-content">
+        <h2>New Arrivals</h2>
+        <p>Check out our latest cracker collections</p>
+        <a href="products.html" class="promo-btn">Explore</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
 
-    <section class="products" id="products">
-      <h2>Featured Crackers</h2>
-      <div class="product-grid" id="productGrid">
-        <!-- Product cards will be injected by JS for search/filter -->
-      </div>
-    </section>
+<section class="products" id="products">
+  <h2>Featured Crackers</h2>
+  <div class="product-carousel" id="productCarousel">
+    <!-- Product cards will be injected by JS for horizontal scroll -->
+  </div>
+</section>
   </main>
  <footer>
     <div class="footer-content">
