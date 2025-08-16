@@ -1,20 +1,20 @@
 // ====================
-// Pavalam Crackers JS - Without Search Functionality
+// Pavalam Crackers JS
 // ====================
 
-// 1. HARDCODED FEATURED PRODUCTS (for home page)
+// 1. HARDCODED FEATURED PRODUCTS (for index.html)
 const featuredProducts = [
   {
-    id: 101,
+    id: 1,
     name: "12 3/4\" Kurvi (10 Pkt)",
     category: "one-sound",
-    image: "assets/one-sound-1.jpg",
+    image: "assets/iloveimg-converted/IMG_1206-Photoroom.png",
     price: 250.00,
     discount: 25.00,
     description: "Premium one sound crackers"
   },
   {
-    id: 201,
+    id: 2,
     name: "G. Chakkar Special (10 pcs)",
     category: "ground-chakkar",
     image: "assets/ground-chakkar-1.jpg",
@@ -23,7 +23,7 @@ const featuredProducts = [
     description: "Special ground chakkar crackers"
   },
   {
-    id: 301,
+    id: 3,
     name: "Flower Pots Big (10 pcs)",
     category: "flower-pots",
     image: "assets/flower-pots-1.jpg",
@@ -32,7 +32,7 @@ const featuredProducts = [
     description: "Beautiful flower pot fireworks"
   },
   {
-    id: 401,
+    id: 4,
     name: "Green Bomb (10 pcs)",
     category: "bomb",
     image: "assets/bomb-1.jpg",
@@ -41,33 +41,61 @@ const featuredProducts = [
     description: "Powerful green bomb crackers"
   }
 ];
-
-// 2. MAIN INITIALIZATION
+// MAIN INITIALIZATION
 document.addEventListener('DOMContentLoaded', function() {
-  // Always show featured products on home page
-  renderFeaturedProducts();
+  initMobileMenu();
+  initCarousel();
   
-  // Check if we're on products page
+  // Check which page we're on
+  if (document.getElementById('productCarousel')) {
+    // On homepage (index.html) - use hardcoded featured products
+    renderFeaturedProducts(featuredProducts);
+  }
+  
   if (document.getElementById('oneSoundCarousel')) {
+    // On products page - load from JSON
     loadAndRenderAllProducts();
   }
   
   setupCommonUI();
 });
 
-// 3. HOME PAGE - FEATURED PRODUCTS
-function renderFeaturedProducts() {
+// 3. PRODUCT DISPLAY FUNCTIONS
+async function loadAndRenderAllProducts() {
+  try {
+    const response = await fetch('data/products.json');
+    if (!response.ok) throw new Error('Failed to load products');
+    const allProducts = await response.json();
+    
+    console.log("Loaded products:", allProducts); // Debug log
+    
+    // Render all category products on products page
+    renderAllCategoryProducts(allProducts);
+    
+    return allProducts;
+  } catch (error) {
+    console.error("Error loading products:", error);
+    // Fallback: Show error message or empty state
+    const carousels = document.querySelectorAll('.product-carousel');
+    carousels.forEach(carousel => {
+      carousel.innerHTML = '<p class="error-message">Unable to load products. Please try again later.</p>';
+    });
+    throw error;
+  }
+}
+
+function renderFeaturedProducts(products) {
   const carousel = document.getElementById('productCarousel');
   if (!carousel) return;
   
-  carousel.innerHTML = featuredProducts.map(product => `
+  carousel.innerHTML = products.map(product => `
     <div class="product-card">
-      <img src="${product.image}" alt="${product.name}" />
+      <img src="${product.image}" alt="${product.name}" loading="lazy" 
+           onerror="this.src='assets/placeholder.jpg'"/>
       <h3>${product.name}</h3>
       <div class="product-price">₹${product.price.toFixed(2)}</div>
-      ${product.discount ? `<div class="product-discount">Discount: ₹${product.discount.toFixed(2)}</div>` : ''}
+      ${product.discount ? `<div class="product-discount">Save ₹${product.discount.toFixed(2)}</div>` : ''}
       <p>${product.description}</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
     </div>
   `).join('');
   
@@ -75,113 +103,106 @@ function renderFeaturedProducts() {
   carousel.style.opacity = '1';
 }
 
-// 4. PRODUCTS PAGE - LOAD AND RENDER ALL PRODUCTS
-async function loadAndRenderAllProducts() {
-  try {
-    const response = await fetch('data/products.json');
-    const allProducts = await response.json();
-    
-    const categoryMap = {
-      "one-sound": "oneSoundCarousel",
-      "ground-chakkar": "groundChakkarCarousel",
-      "flower-pots": "flowerPotsCarousel",
-      "bomb": "bombCarousel",
-      "bijili-pack": "bijiliPackCarousel",
-      "twirling-star": "twirlingStarCarousel",
-      "kids-zone": "kidsZoneCarousel",
-      "kids-fountains": "kidsFountainsCarousel",
-      "hold-on-hand": "holdOnHandCarousel",
-      "colors-sky": "colorsSkyCarousel",
-      "mega-sky-shot": "megaSkyShotCarousel",
-      "repeating-shots": "repeatingShotsCarousel",
-      "colorful-night": "colorfulNightCarousel",
-      "wala": "walaCarousel",
-      "sparklers": "sparklersCarousel",
-      "match-boxes": "matchBoxesCarousel",
-      "gift-boxes": "giftBoxesCarousel"
-    };
+function renderAllCategoryProducts(allProducts) {
+  const categoryMap = {
+    "one-sound": "oneSoundCarousel",
+    "ground-chakkar": "groundChakkarCarousel",
+    "flower-pots": "flowerPotsCarousel",
+    "bomb": "bombCarousel",
+    "bijili-pack": "bijiliPackCarousel",
+    "twinkling-star": "twirlingStarCarousel", // Note: Changed from "twirling-star" to match your JSON
+    "kids-collection": "kidsZoneCarousel",    // Note: Changed from "kids-zone" to match your JSON
+    "hold-on-hand": "holdOnHandCarousel",
+    "colors-sky": "colorsSkyCarousel",
+    "mega-sky-shot": "megaSkyShotCarousel",
+    "repeating-shots": "repeatingShotsCarousel",
+    "colorful-night": "colorfulNightCarousel",
+    "whistle-fountain": "walaCarousel",       // Note: Changed from "wala" to match your JSON
+    "sparklers": "sparklersCarousel",
+    "match-boxes": "matchBoxesCarousel",
+    "mega-set-out": "giftBoxesCarousel"      // Note: Changed from "gift-boxes" to match your JSON
+  };
 
-    for (const [category, carouselId] of Object.entries(categoryMap)) {
-      const carousel = document.getElementById(carouselId);
-      if (carousel) {
-        const categoryProducts = allProducts.filter(p => p.category === category);
-        carousel.innerHTML = categoryProducts.map(product => `
-          <div class="product-card">
-            <img src="${product.image}" alt="${product.name}" />
-            <h3>${product.name}</h3>
-            <div class="product-price">₹${product.price.toFixed(2)}</div>
-            ${product.discount ? `<div class="product-discount">Discount: ₹${product.discount.toFixed(2)}</div>` : ''}
-            <p>${product.description}</p>
-            <button class="add-to-cart-btn">Add to Cart</button>
-          </div>
-        `).join('');
-        
-        carousel.style.display = 'flex';
-        carousel.style.opacity = '1';
+  for (const [category, carouselId] of Object.entries(categoryMap)) {
+    const carousel = document.getElementById(carouselId);
+    if (carousel) {
+      const categoryProducts = allProducts.filter(p => p.category === category);
+      console.log(`Rendering ${category} (${categoryProducts.length} products)`);
+      
+      if (categoryProducts.length === 0) {
+        carousel.innerHTML = '<p class="empty-message">No products in this category yet.</p>';
+        continue;
       }
+      
+      carousel.innerHTML = categoryProducts.map(product => `
+        <div class="product-card" data-id="${product.id}">
+          <img src="assets/products/${product.id}.jpg" alt="${product.name}" loading="lazy" 
+               onerror="this.src='assets/placeholder.jpg'"/>
+          <h3>${product.name}</h3>
+          <div class="product-info">
+            ${product.price ? `<div class="product-price">₹${product.price.toFixed(2)}</div>` : '<div class="product-price">Price on request</div>'}
+            ${product.unit ? `<div class="product-unit">${product.unit}</div>` : ''}
+          </div>
+          <button class="btn enquire-btn" data-id="${product.id}">Enquire Now</button>
+        </div>
+      `).join('');
     }
-    
-  } catch (error) {
-    console.error("Failed to load products:", error);
-    document.getElementById('oneSoundCarousel').innerHTML = 
-      featuredProducts.map(createProductCard).join('');
   }
 }
 
-// 5. COMMON UI COMPONENTS
+// 4. UI COMPONENTS (rest of the code remains the same)
 function setupCommonUI() {
-  // Mobile menu toggle
-  document.querySelector('.hamburger')?.addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('active');
-    this.classList.toggle('active');
-  });
-  
-  // Image modal
+  // Image Modal
   document.addEventListener('click', function(e) {
-    if (e.target.tagName === 'IMG' && e.target.closest('.product-card')) {
+    if (e.target.tagName === 'IMG' && e.target.closest('.product-card, .search-result-card')) {
       const modalImg = document.getElementById('modalImg');
-      modalImg.src = e.target.src;
-      document.getElementById('imageModal').classList.add('active');
-    }
-  });
-  
-  document.querySelector('.modal-close')?.addEventListener('click', function() {
-    document.getElementById('imageModal').classList.remove('active');
-  });
-  
-  // Add to cart
-  document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('add-to-cart-btn')) {
-      const product = e.target.closest('.product-card');
-      alert(`Added ${product.querySelector('h3').textContent} to cart!`);
-    }
-  });
-  
-  // Update search form to use search page
-  const searchForm = document.getElementById('searchForm');
-  if (searchForm) {
-    searchForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const term = document.getElementById('searchBar').value.trim();
-      if (term) {
-        window.location.href = `search.html?q=${encodeURIComponent(term)}`;
+      if (modalImg) {
+        modalImg.src = e.target.src;
+        document.getElementById('imageModal')?.classList.add('active');
       }
+    }
+  });
+
+  // Modal Close
+  document.querySelector('.modal-close')?.addEventListener('click', function() {
+    document.getElementById('imageModal')?.classList.remove('active');
+  });
+
+  // Popup Close
+  document.getElementById('popupClose')?.addEventListener('click', function() {
+    document.getElementById('popupModal')?.classList.remove('active');
+  });
+
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.mobile-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  
+  if (hamburger && mainNav) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
     });
   }
+  
+  // Dropdown menus on mobile
+  document.querySelectorAll('.dropdown > a').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const dropdown = this.parentElement;
+        dropdown.classList.toggle('active');
+        
+        document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('active');
+          }
+        });
+      }
+    });
+  });
 }
 
-function createProductCard(product) {
-  return `
-    <div class="product-card">
-      <img src="${product.image}" alt="${product.name}" />
-      <h3>${product.name}</h3>
-      <div class="product-price">₹${product.price.toFixed(2)}</div>
-      ${product.discount ? `<div class="product-discount">Discount: ₹${product.discount.toFixed(2)}</div>` : ''}
-      <p>${product.description}</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-  `;
-}
+// 5. CAROUSEL FUNCTIONALITY (rest of the code remains the same)
 function initCarousel() {
   const slider = document.getElementById('promoSlider');
   if (!slider) return;
@@ -192,10 +213,7 @@ function initCarousel() {
   let interval;
 
   function updateSlider() {
-    // Update slide positions
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    
-    // Update active dot
     dots.forEach((dot, index) => {
       dot.classList.toggle('active', index === currentIndex);
     });
@@ -207,30 +225,62 @@ function initCarousel() {
     resetInterval();
   }
 
-  function goToSlide(index) {
-    currentIndex = index;
-    updateSlider();
-    resetInterval();
-  }
-
   function resetInterval() {
     clearInterval(interval);
-    interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    interval = setInterval(nextSlide, 5000);
   }
 
-  // Dot navigation
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-      goToSlide(index);
+      currentIndex = index;
+      updateSlider();
+      resetInterval();
     });
   });
 
-  // Initialize
   updateSlider();
   interval = setInterval(nextSlide, 5000);
 }
 
-// Initialize the carousel when DOM loads
-document.addEventListener('DOMContentLoaded', function() {
-  initCarousel();
-});
+function initMobileMenu() {
+  const mobileToggle = document.querySelector('.mobile-toggle');
+  const mainNav = document.querySelector('.main-nav');
+
+  if (mobileToggle && mainNav) {
+    mobileToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+  }
+}
+function renderFeaturedProducts(products) {
+  const carousel = document.getElementById('productCarousel');
+  if (!carousel) {
+    console.error('Product carousel element not found');
+    return;
+  }
+
+  // Clear any loading state
+  carousel.innerHTML = '';
+
+  // Create product cards
+  const productCards = products.map(product => `
+    <div class="product-card" data-id="${product.id}">
+      <img src="${product.image}" alt="${product.name}" loading="lazy" 
+           onerror="this.src='assets/placeholder.jpg'"/>
+      <h3>${product.name}</h3>
+      <div class="product-price">₹${product.price.toFixed(2)}</div>
+      ${product.discount ? `<div class="product-discount">Save ₹${product.discount.toFixed(2)}</div>` : ''}
+      <p>${product.description}</p>
+    </div>
+  `).join('');
+
+  // Insert into DOM
+  carousel.innerHTML = productCards;
+  
+  // Make visible (if hidden by default)
+  carousel.style.display = 'flex';
+  carousel.style.opacity = '1';
+
+  console.log('Featured products rendered:', products.length);
+}

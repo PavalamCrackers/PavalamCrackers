@@ -7,46 +7,67 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <div class="logo">Pavalam Crackers</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="products.html" class="dropdown-toggle">Products</a>
-            <ul class="dropdown-content">
-              <li><a href="products.html#one-sound">One Sound Crackers</a></li>
-              <li><a href="products.html#ground-chakkar">Ground Chakkar</a></li>
-              <li><a href="products.html#flower-pots">Flower Pots</a></li>
-              <li><a href="products.html#bomb">Bomb</a></li>
-              <li><a href="products.html#bijili-pack">Special Bijili Pack</a></li>
-              <li><a href="products.html#twirling-star">Twirling Star</a></li>
-              <li><a href="products.html#kids-zone">Kids Zone</a></li>
-              <li><a href="products.html#kids-fountains">Kids Fountains</a></li>
-              <li><a href="products.html#hold-on-hand">Hold on Hand</a></li>
-              <li><a href="products.html#colors-sky">Colors in Sky</a></li>
-              <li><a href="products.html#mega-sky-shot">Mega Sky Shot</a></li>
-              <li><a href="products.html#repeating-shots">Repeating Shots</a></li>
-              <li><a href="products.html#colorful-night">Colorful Night Crackers</a></li>
-              <li><a href="products.html#wala">Wala</a></li>
-              <li><a href="products.html#sparklers">Sparklers</a></li>
-              <li><a href="products.html#match-boxes">Match Boxes</a></li>
-              <li><a href="products.html#gift-boxes">Gift Boxes</a></li>
-            </ul>
-          </li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-        <form class="search-form" id="searchForm" action="search.html" method="get" role="search" autocomplete="off">
-  <input type="text" class="search-bar" id="searchBar" name="q" placeholder="Search crackers..." aria-label="Search crackers" />
-  <button type="submit" class="search-btn" aria-label="Search">
-    <!-- SVG search icon -->
-  </button>
-</form>
-        <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-      </nav>
+<header class="main-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">Pavalam Crackers</a>
     </div>
-  </header>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        
+        <!-- Products Dropdown -->
+        <li class="dropdown">
+          <a href="products.html" class="dropdown-toggle">Products <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="products.html#one-sound">One Sound Crackers</a></li>
+            <li><a href="products.html#ground-chakkar">Ground Chakkar</a></li>
+            <li><a href="products.html#flower-pots">Flower Pots</a></li>
+            <li><a href="products.html#bomb">Bomb</a></li>
+            <li><a href="products.html#bijili-pack">Special Bijili Pack</a></li>
+            <li><a href="products.html#twirling-star">Twirling Star</a></li>
+            <li><a href="products.html#kids-zone">Kids Zone</a></li>
+            <li><a href="products.html#kids-fountains">Kids Fountains</a></li>
+            <li><a href="products.html#hold-on-hand">Hold on Hand</a></li>
+            <li><a href="products.html#colors-sky">Colors in Sky</a></li>
+            <li><a href="products.html#mega-sky-shot">Mega Sky Shot</a></li>
+            <li><a href="products.html#repeating-shots">Repeating Shots</a></li>
+            <li><a href="products.html#colorful-night">Colorful Night Crackers</a></li>
+            <li><a href="products.html#wala">Wala</a></li>
+            <li><a href="products.html#sparklers">Sparklers</a></li>
+            <li><a href="products.html#match-boxes">Match Boxes</a></li>
+            <li><a href="products.html#gift-boxes">Gift Boxes</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search Form -->
+    <div class="header-search">
+      <form class="search-form" action="search.html" method="get">
+        <input type="text" name="q" placeholder="Search crackers..." aria-label="Search crackers">
+        <button type="submit" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="9" cy="9" r="7" stroke="#e65100" stroke-width="2"/>
+            <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
 
   <main>
     <!-- One Sound Crackers -->
@@ -81,7 +102,7 @@
 
     <!-- Twirling Star -->
     <section class="products" id="twirling-star">
-      <h2>Twirling Star</h2>
+      <h2>Twinkling Star</h2>
       <div class="product-carousel" id="twirlingStarCarousel"></div>
     </section>
 
