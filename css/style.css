@@ -1050,7 +1050,6 @@ footer p {
 }
 .promo-carousel {
   position: relative;
-  max-width: 1250px;
   margin: 40px auto 32px auto;
   overflow: hidden;
   border-radius: 18px;
@@ -1140,6 +1139,6 @@ footer p {
   width: 100%;
   height: auto;
   max-height: 500px;
-  object-fit: contain;
+  object-fit: auto;
   display: block;
 }
