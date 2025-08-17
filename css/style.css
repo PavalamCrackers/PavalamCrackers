@@ -417,99 +417,6 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* ====== Promo Carousel ====== */
-.promo-carousel {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.promo-slider {
-    display: flex;
-    transition: transform 0.5s ease;
-    height: 500px;
-}
-
-.promo-slide {
-    min-width: 100%;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.promo-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-}
-
-.promo-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: var(--white);
-    width: 80%;
-    max-width: 800px;
-}
-
-.promo-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.promo-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.promo-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--primary-dark);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primary-dark);
-}
-
-.promo-btn:hover {
-    background-color: transparent;
-    color: var(--primary-dark);
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 5;
-}
-
-.scroll-indicator .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 0.000000000001cm solid var(--text-color);
-}
-
-.scroll-indicator .dot.active {
-    background-color: var(--primary-dark);
-    transform: scale(1.2);
-}
-
 /* ====== Products Section ====== */
 .products {
     padding: 60px 20px;
@@ -1140,4 +1047,99 @@ footer p {
     max-width: 100%; /* Full width search on smallest screens */
     padding: 0 10px; /* Add some side padding */
   }
+}
+.promo-carousel {
+  position: relative;
+  max-width: 1250px;
+  margin: 40px auto 32px auto;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  background: #fff;
+  min-height: 450px;
+  width: 100%;
+}
+.promo-slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1), opacity 0.5s;
+  z-index: 1;
+  pointer-events: none;
+}
+.promo-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+  pointer-events: auto;
+}
+.promo-slide.slide-out-left {
+  opacity: 1;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+.promo-slide.slide-out-right {
+  opacity: 1;
+  transform: translateX(100%);
+  z-index: 1;
+}
+.promo-slide.slide-in-right {
+  opacity: 1;
+  transform: translateX(100%);
+  z-index: 2;
+}
+.promo-slide.slide-in-left {
+  opacity: 1;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+.promo-caption {
+  padding: 24px;
+  background: #fff;
+  text-align: center;
+}
+.promo-caption h3 {
+  font-size: 2.2rem;
+  color: #e65100;
+}
+.promo-caption p {
+  font-size: 1.2rem;
+  color: #333;
+}
+.promo-prev, .promo-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e65100;
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  padding: 12px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 3;
+}
+.promo-prev { left: 16px; }
+.promo-next { right: 16px; }
+.promo-prev:hover, .promo-next:hover {
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  .promo-carousel { max-width: 100%; }
+  .promo-slide img { max-height: 260px; }
+  .promo-caption { padding: 12px; }
+}
+@media (max-width: 600px) {
+  .promo-slide img { max-height: 160px; }
+  .promo-caption h3 { font-size: 1.2rem; }
+  .promo-caption p { font-size: 1rem; }
+}
+.promo-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
 }
