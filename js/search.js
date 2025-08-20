@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadAndSearchProducts(searchTerm) {
   try {
-    const response = await fetch('data/products.json');
+    const response = await fetch('/data/crackers.json');
     if (!response.ok) {
       throw new Error('Failed to load products');
     }
