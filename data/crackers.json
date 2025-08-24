@@ -18,10 +18,10 @@
       },
       {
         "id": 3,
-        "name": "Bhaguballi 25 Ply",
+        "name": "Bhagubali - 25 Ply Mega Size",
         "category": "one-sound",
         "price": 88.00,
-        "description": "Bhaguballi 25 Ply crackers, 1 packet"
+        "description": "Bhagubali 25 Ply crackers, 1 packet"
       },
       {
         "id": 4,
@@ -32,21 +32,21 @@
       },
       {
         "id": 5,
-        "name": "1/4 kg Paper Bomb",
+        "name": "1/4 Kg Paper Bomb",
         "category": "one-sound",
-        "price": 48.00,
+        "price": 50.00,
         "description": "1/4 kg Paper Bomb, 1 box"
       },
       {
         "id": 6,
-        "name": "1/2 kg Paper Bomb",
+        "name": "1/2 Kg Paper Bomb",
         "category": "one-sound",
-        "price": 96.00,
+        "price": 100.00,
         "description": "1/2 kg Paper Bomb, 1 box"
       },
       {
         "id": 7,
-        "name": "1 kg Paper Bomb",
+        "name": "1 Kg Paper Bomb",
         "category": "one-sound",
         "price": 200.00,
         "description": "1 kg Paper Bomb, 1 box"
@@ -54,49 +54,42 @@
     ]
   },
   {
-    "categoryName": "Ground Chakkar / Spinners",
+    "categoryName": "Ground Chakkar / Spinner (Plastic)",
     "productlist": [
       {
         "id": 8,
-        "name": "G. Chakkar Special (10 pcs)",
+        "name": "G. Chakkar Special (10 Pcs)",
         "category": "ground-chakkar",
         "price": 100.00,
         "description": "Ground Chakkar Special, 10 pieces per box"
       },
       {
         "id": 9,
-        "name": "Spinner Special (10 pcs)",
+        "name": "Spinner Special / Plastic Base (10 Pcs)",
         "category": "ground-chakkar",
         "price": 150.00,
         "description": "Spinner Special with plastic base, 10 pieces per box"
       },
       {
         "id": 10,
-        "name": "Spinner Deluxe (10 pcs)",
+        "name": "Spinner Deluxe / Plastic Base (10 Pcs)",
         "category": "ground-chakkar",
         "price": 230.00,
         "description": "Spinner Deluxe with plastic base, 10 pieces per box"
       },
       {
         "id": 11,
-        "name": "Rio Wheel / Tinto (5 pcs)",
-        "category": "ground-chakkar",
-        "price": 230.00,
-        "description": "Rio Wheel with color changing effect, 5 pieces per box"
-      },
-      {
-        "id": 12,
         "name": "Planet Wheel Show",
         "category": "ground-chakkar",
         "price": 230.00,
         "description": "Planet Wheel Show with crackling effect, 1 box"
       },
       {
-        "id": 13,
-        "name": "4 * 4 Wheel - Lotus effect",
+        "id": 12,
+        "name": "4*4 Wheel - Lotus effect",
         "category": "ground-chakkar",
         "price": 160.00,
-        "description": "4 * 4 Wheel with Lotus effect, 1 box"
+        "description": "4*4 Wheel with Lotus effect, 1 box"
       }
     ]
   },
@@ -104,126 +97,121 @@
     "categoryName": "Flower Pots / Color Pots",
     "productlist": [
       {
-        "id": 14,
-        "name": "Flower Pots Big (10 pcs)",
+        "id": 13,
+        "name": "Flower Pots Big (10 Pcs)",
         "category": "flower-pots",
-        "price": 86.00,
+        "price": 78.00,
         "description": "Big Flower Pots, 10 pieces per box"
       },
       {
-        "id": 15,
-        "name": "Flower Pots Ashoka (10 pcs)",
+        "id": 14,
+        "name": "Flower Pots Ashoka (10 Pcs)",
         "category": "flower-pots",
-        "price": 132.00,
+        "price": 128.00,
         "description": "Ashoka Flower Pots, 10 pieces per box"
       },
       {
-        "id": 16,
-        "name": "Flower Pots Color Koti (10 pcs)",
+        "id": 15,
+        "name": "Flower Pots Color Koti (10 Pcs)",
         "category": "flower-pots",
-        "price": 210.00,
+        "price": 195.00,
         "description": "Color Koti Flower Pots, 10 pieces per box"
       },
       {
-        "id": 17,
-        "name": "Flower Pots Color Koti Deluxe (10 pcs)",
+        "id": 16,
+        "name": "Flower Pots Color Koti Deluxe (10 Pcs)",
         "category": "flower-pots",
         "price": 420.00,
         "description": "Color Koti Deluxe Flower Pots, 10 pieces per box"
       },
       {
-        "id": 18,
-        "name": "Color Pots Deluxe (5 pcs)",
+        "id": 17,
+        "name": "Color Pots Deluxe (5 Pcs)",
         "category": "flower-pots",
         "price": 260.00,
-        "description": "Color Pots Deluxe, 5 pieces per box",
-        "instagram_link": "https://www.instagram.com/p/DMnlUzbhU-t/"
+        "description": "Color Pots Deluxe, 5 pieces per box"
       }
     ]
   },
-   {
-    "categoryName": "Bijili Vedi / Crackers",
+  {
+    "categoryName": "Bijili Vedi / Digital Wala",
     "productlist": [
       {
-        "id": 19,
-        "name": "Bijili Mega Power (100 pcs)",
+        "id": 18,
+        "name": "Bijili Mega Power (100 Pcs)",
         "category": "bijili",
         "price": 35.00,
         "description": "Bijili Mega Power crackers, 100 pieces per packet"
       },
       {
-        "id": 20,
-        "name": "Green Mirchi / Wala",
+        "id": 19,
+        "name": "Green Mirohi - Wala",
         "category": "bijili",
         "price": 300.00,
-        "description": "Green Mirchi/Wala crackers, 1 box",
-        "instagram_link": "https://www.instagram.com/p/DMlBAWyBa8x/"
+        "description": "Green Mirohi/Wala crackers, 1 box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Twiling Star / Sattai",
     "productlist": [
       {
-        "id": 21,
-        "name": "Mini Twinkling Star",
+        "id": 20,
+        "name": "Mini Twiling Star",
         "category": "twinkling-star",
         "price": 32.00,
-        "description": "Mini Twinkling Star, 1 box"
+        "description": "Mini Twiling Star, 1 box"
       },
       {
-        "id": 22,
-        "name": "Mega Twinkling Star",
+        "id": 21,
+        "name": "Mega Twiling Star",
         "category": "twinkling-star",
         "price": 85.00,
-        "description": "Mega Twinkling Star, 1 box"
+        "description": "Mega Twiling Star, 1 box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Holding Magics With Hand",
     "productlist": [
       {
-        "id": 23,
+        "id": 22,
         "name": "Smoke",
         "category": "holding-magics",
-        "price": 140.00,
+        "price": 138.00,
         "description": "Smoke crackers, 1 box"
       },
       {
-        "id": 24,
+        "id": 23,
         "name": "Super Code",
         "category": "holding-magics",
-        "price": 220.00,
+        "price": 218.00,
         "description": "Super Code crackers, 1 box"
       },
       {
-        "id": 25,
+        "id": 24,
         "name": "Shower Point",
         "category": "holding-magics",
-        "price": 220.00,
-        "description": "Shower Point crackers, 1 box",
-        "instagram_link": "https://www.instagram.com/p/DNHi38XhmIh/"
+        "price": 218.00,
+        "description": "Shower Point crackers, 1 box"
+      },
+      {
+        "id": 25,
+        "name": "AK 47 Big Gun",
+        "category": "holding-magics",
+        "price": 260.00,
+        "description": "AK 47 Big Gun crackers, 1 box"
       },
       {
         "id": 26,
-        "name": "Ak 47 Big Gun",
+        "name": "Wire Chakkar SPL Edition (10 Pcs)",
         "category": "holding-magics",
-        "price": 260.00,
-        "description": "Ak 47 Big Gun crackers, 1 box",
-        "instagram_link": "https://www.instagram.com/p/DM1cWRWBqqz/"
+        "price": 175.00,
+        "description": "Wire Chakkar Special, 10 pieces per box"
       },
       {
         "id": 27,
-        "name": "Wire Chakkar Special (10 pcs)",
-        "category": "holding-magics",
-        "price": 175.00,
-        "description": "Wire Chakkar Special, 10 pieces per box",
-        "instagram_link": "https://www.instagram.com/p/DM5ewQiBex1/"
-      },
-      {
-        "id": 28,
-        "name": "Fuji Candle with Water Queen (5 pcs)",
+        "name": "Fuji Candle with Water Queen Fun (5 Pcs)",
         "category": "holding-magics",
         "price": 270.00,
         "description": "Fuji Candle with Water Queen function, 5 pieces per box"
@@ -231,138 +219,153 @@
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Sky Shots",
     "productlist": [
       {
-        "id": 29,
-        "name": "Penta 5 in 1 (5 pcs)",
+        "id": 28,
+        "name": "Penta 5 in 1 (5 Pcs)",
         "category": "sky-shots",
-        "price": 165.00,
+        "price": 160.00,
         "description": "Penta 5 in 1 with different colors, 5 pieces per box"
       },
       {
-        "id": 30,
-        "name": "2\" Sky shot (3 pcs)",
+        "id": 29,
+        "name": "2\" inch Sky Shot (3 pcs)",
         "category": "sky-shots",
-        "price": 300.00,
+        "price": 290.00,
         "description": "2 inch Sky shot, 3 pieces per box"
       },
       {
-        "id": 31,
+        "id": 30,
         "name": "Gulf War (3 pcs)",
         "category": "sky-shots",
         "price": 550.00,
         "description": "Gulf War with full cracking effect, 3 pieces per box"
       },
       {
-        "id": 32,
-        "name": "Sonny Crackling Red Shot",
+        "id": 31,
+        "name": "Craking Red Shot - Vera Mari Effect (5 pcs)",
         "category": "sky-shots",
         "price": 260.00,
-        "description": "Sonny Crackling Red Shot with Vera Mari effect"
+        "description": "Cracking Red Shot with Vera Mari effect, 5 pieces per box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Mega Sky Shot - 7 Step/Times Function Series 1",
     "productlist": [
       {
-        "id": 33,
+        "id": 32,
         "name": "Red Bull",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
       },
       {
-        "id": 34,
-        "name": "Green Emirates",
+        "id": 33,
+        "name": "Green Emirties",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
       },
       {
-        "id": 35,
+        "id": 34,
         "name": "Glittering Gems",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
       },
       {
-        "id": 36,
+        "id": 35,
         "name": "Golden Guns",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
       },
       {
-        "id": 37,
+        "id": 36,
         "name": "Double Trouble",
-        "category": "mega-sky-shots",
-        "price": 380.00,
-        "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function",
-        "instagram_link": "https://www.instagram.com/p/DNcQtnXv3Xj/"
-      },
-      {
-        "id": 38,
-        "name": "Tom Rider",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
       },
       {
-        "id": 39,
+        "id": 37,
+        "name": "Tom Rider",
+        "category": "mega-sky-shots",
+        "price": 380.00,
+        "description": "Mega Sky Shot Series 1 - 7 Step/Wonder Function"
+      }
+    ]
+  },
+  {
+    "categoryName": "Mega Sky Shot With Boom Effect - Series 2",
+    "productlist": [
+      {
+        "id": 38,
         "name": "Blue Horse",
         "category": "mega-sky-shots",
         "price": 380.00,
-        "description": "Mega Sky Shot Series 2 with Boom Effect",
-        "instagram_link": "https://www.instagram.com/p/DNI4PXwhwFX/"
+        "description": "Mega Sky Shot Series 2 with Boom Effect"
       },
       {
-        "id": 40,
+        "id": 39,
         "name": "Jazz",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 2 with Boom Effect"
       },
       {
-        "id": 41,
+        "id": 40,
         "name": "Rock",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 2 with Boom Effect"
       },
       {
-        "id": 42,
+        "id": 41,
         "name": "Thunder War",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 2 with Boom Effect"
       },
       {
-        "id": 43,
+        "id": 42,
         "name": "Nasik War",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 2 with Boom Effect"
-      },
+      }
+    ]
+  },
+  {
+    "categoryName": "Mega Sky Shot - Series 3 & Ultra Mega Sky Shot - Series 4",
+    "productlist": [
       {
-        "id": 44,
-        "name": "Nayagara with Golden Fall effect",
+        "id": 43,
+        "name": "Nayagara with Golden Fall Effect",
         "category": "mega-sky-shots",
         "price": 380.00,
         "description": "Mega Sky Shot Series 3"
       },
       {
-        "id": 45,
+        "id": 44,
         "name": "Double Ball - Mega Shot",
         "category": "mega-sky-shots",
         "price": 380.00,
-        "description": "Mega Sky Shot Series 4"
+        "description": "Ultra Mega Sky Shot Series 4"
+      },
+      {
+        "id": 45,
+        "name": "Ultra Mega Shot - Sonny",
+        "category": "mega-sky-shots",
+        "price": 380.00,
+        "description": "Ultra Mega Sky Shot Series 4"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Repeating Shots With Crackling Effect",
     "productlist": [
       {
         "id": 46,
@@ -373,24 +376,23 @@
       },
       {
         "id": 47,
-        "name": "Love - Multi color",
+        "name": "Love - Multishot - Peacock Style",
         "category": "repeating-shots",
-        "price": 130.00,
-        "description": "Love multi color shot with peacock style effect",
-        "instagram_link": "https://www.instagram.com/p/DNTRT66BIJ6/"
+        "price": 135.00,
+        "description": "Love multi color shot with peacock style effect"
       },
       {
         "id": 48,
         "name": "Fusion 30 Shot",
         "category": "repeating-shots",
-        "price": 460.00,
+        "price": 420.00,
         "description": "Fusion 30 shot with R,G,W,Y,Golden Tail & Crackling effect"
       },
       {
         "id": 49,
         "name": "Fusion 60 Shot",
         "category": "repeating-shots",
-        "price": 960.00,
+        "price": 900.00,
         "description": "Fusion 60 shot with R,G,W,Y,Golden Tail & Crackling effect"
       },
       {
@@ -413,56 +415,62 @@
         "category": "repeating-shots",
         "price": 7680.00,
         "description": "Fusion 480 shot with R,G,W,Y,Golden Tail & Crackling effect"
-      },
-      {
-        "id": 53,
-        "name": "Sky war 60 shot",
-        "category": "repeating-shots",
-        "price": 1500.00,
-        "description": "Sky war 60 shot with full crackling stars"
-      },
-      {
-        "id": 54,
-        "name": "Vel' Thriller 32 shots",
-        "category": "fancy-shots",
-        "price": 5500.00,
-        "description": "Vel' Thriller 32 shots with multi function"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Repeating Full Crackling Shots & Mega Set Out - Fancy",
     "productlist": [
       {
-        "id": 55,
-        "name": "Thriller II Generation 32 Shot",
+        "id": 53,
+        "name": "Sky War - 60 Shot (Full Crackling)",
+        "category": "repeating-shots",
+        "price": 1300.00,
+        "description": "Sky war 60 shot with full crackling stars"
+      },
+      {
+        "id": 54,
+        "name": "Vel's thriller 32 Shot - Multi Color",
         "category": "fancy-shots",
         "price": 5500.00,
+        "description": "Vel's Thriller 32 shots with multi function"
+      },
+      {
+        "id": 55,
+        "name": "Thriller II Gen 32 Shot",
+        "category": "fancy-shots",
+        "price": 5700.00,
         "description": "Thriller II Generation 32 shot with continuous 4 sky shots"
       },
       {
         "id": 56,
         "name": "Phoniex 10 * 10",
         "category": "fancy-shots",
-        "price": 3600.00,
-        "description": "Phoniex 10 * 10 must try product",
-        "instagram_link": "https://www.instagram.com/p/DNGeVizh3CI/"
+        "price": 4000.00,
+        "description": "Phoniex 10 * 10 must try product"
+      },
+      {
+        "id": 57,
+        "name": "MAX 20 - Mega Shot",
+        "category": "fancy-shots",
+        "price": 7000.00,
+        "description": "MAX 20 Mega Shot"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Whistle Fountain Series",
     "productlist": [
       {
-        "id": 57,
-        "name": "Mini Siren (5 pcs)",
+        "id": 58,
+        "name": "Mini Siren (5 Pieces)",
         "category": "whistle-fountain",
         "price": 150.00,
         "description": "Mini Siren with whistle sound, 5 pieces per box"
       },
       {
-        "id": 58,
-        "name": "Mega Siren (3 pcs)",
+        "id": 59,
+        "name": "Mega Siren (3 Pieces)",
         "category": "whistle-fountain",
         "price": 220.00,
         "description": "Mega Siren with whistle sound, 3 pieces per box"
@@ -470,125 +478,128 @@
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Kids Collection / Kids Fountain",
     "productlist": [
       {
-        "id": 59,
-        "name": "Kitkat / Chitu Putu",
+        "id": 60,
+        "name": "Kitkat / Chitu putu",
         "category": "kids-collection",
         "price": 30.00,
         "description": "Kitkat/Chitu Putu crackers, 1 box"
       },
       {
-        "id": 60,
-        "name": "Golden Rain (5 pcs)",
+        "id": 61,
+        "name": "5 Girls Fountain",
         "category": "kids-collection",
-        "price": 100.00,
-        "description": "Golden Rain with fountain function, 5 pieces per box"
+        "price": 63.00,
+        "description": "5 Girls with different colors, 1 box"
       },
       {
-        "id": 61,
-        "name": "Fun Shower (5 pcs)",
+        "id": 62,
+        "name": "Fun shower (5 pcs)",
         "category": "kids-collection",
         "price": 100.00,
         "description": "Fun Shower with fountain function, 5 pieces per box"
       },
       {
-        "id": 62,
+        "id": 63,
         "name": "Feather (5 pcs)",
         "category": "kids-collection",
         "price": 100.00,
         "description": "Feather with fountain function, 5 pieces per box"
       },
       {
-        "id": 63,
-        "name": "5 Girls - 5 Different Function",
+        "id": 64,
+        "name": "Golden Rain (5 pcs)",
         "category": "kids-collection",
-        "price": 63.00,
-        "description": "5 Girls with 5 different functions, 1 box"
+        "price": 100.00,
+        "description": "Golden Rain with fountain function, 5 pieces per box"
       },
       {
-        "id": 64,
-        "name": "5 in 1 Multi Color Fountain",
+        "id": 65,
+        "name": "Kids Spl - 5 in 1 fountain",
         "category": "kids-collection",
         "price": 330.00,
         "description": "5 in 1 multi color continuous fountain function"
       },
       {
-        "id": 65,
-        "name": "Color Fun Zone (5 pcs)",
+        "id": 66,
+        "name": "Kids Spl - Color Fun (5 Pcs)",
         "category": "kids-collection",
         "price": 480.00,
-        "description": "Color Fun Zone with special color, 5 pieces per box"
+        "description": "Color Fun with special color, 5 pieces per box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Eve Catching Colorful Night Fountain Series 1",
     "productlist": [
       {
-        "id": 66,
+        "id": 67,
         "name": "Red Mela",
         "category": "colorful-night",
         "price": 125.00,
         "description": "Red Mela colorful night crackers, 1 box"
       },
       {
-        "id": 67,
+        "id": 68,
         "name": "Green City",
         "category": "colorful-night",
         "price": 125.00,
         "description": "Green City colorful night crackers, 1 box"
       },
       {
-        "id": 68,
+        "id": 69,
         "name": "Pop Fun",
         "category": "colorful-night",
         "price": 125.00,
         "description": "Pop Fun colorful night crackers, 1 box"
       },
       {
-        "id": 69,
+        "id": 70,
         "name": "Star War",
         "category": "colorful-night",
         "price": 125.00,
         "description": "Star War colorful night crackers, 1 box"
-      },
+      }
+    ]
+  },
+  {
+    "categoryName": "Eve Catching Colorful Night Fountain Series 2",
+    "productlist": [
       {
-        "id": 70,
-        "name": "Lemon tree - Silver",
+        "id": 71,
+        "name": "Lemon Tree - Silver",
         "category": "colorful-night",
-        "price": 135.00,
+        "price": 138.00,
         "description": "Lemon tree with double function (Silver), 1 box"
       },
       {
-        "id": 71,
-        "name": "Lemon tree - Amber",
+        "id": 72,
+        "name": "Lemon Tree - Amber",
         "category": "colorful-night",
-        "price": 135.00,
+        "price": 138.00,
         "description": "Lemon tree with double function (Amber), 1 box"
       },
       {
-        "id": 72,
-        "name": "Lemon tree - Yellow",
+        "id": 73,
+        "name": "Lemon Tree - Yellow",
         "category": "colorful-night",
-        "price": 135.00,
+        "price": 138.00,
         "description": "Lemon tree with double function (Yellow), 1 box"
       },
       {
-        "id": 73,
-        "name": "Lemon tree - Purple",
+        "id": 74,
+        "name": "Lemon Tree - Purple",
         "category": "colorful-night",
         "price": 155.00,
         "description": "Lemon tree with double function (Purple), 1 box"
-      },
-      {
-        "id": 74,
-        "name": "King Red",
-        "category": "colorful-night",
-        "price": 180.00,
-        "description": "King Red with double function (Fountain with Chakkars), 1 box"
-      },
+      }
+    ]
+  },
+  {
+    "categoryName": "Eve Catching Colorful Night Fountain Series 3",
+    "productlist": [
       {
         "id": 75,
         "name": "Blossom",
@@ -598,261 +609,285 @@
       },
       {
         "id": 76,
+        "name": "King Red",
+        "category": "colorful-night",
+        "price": 180.00,
+        "description": "King Red with double function (Fountain with Chakkars), 1 box"
+      },
+      {
+        "id": 77,
         "name": "Magic",
         "category": "colorful-night",
         "price": 180.00,
         "description": "Magic with double function (Fountain with Chakkars), 1 box"
       },
       {
-        "id": 77,
+        "id": 78,
         "name": "Peral",
         "category": "colorful-night",
         "price": 180.00,
         "description": "Peral with double function (Fountain with Chakkars), 1 box"
-      },
+      }
+    ]
+  },
+  {
+    "categoryName": "Eve Catching Colorful Night Fountain Series 4",
+    "productlist": [
       {
-        "id": 78,
-        "name": "Peacock 5 way",
+        "id": 79,
+        "name": "Peacock 5 ways",
         "category": "colorful-night",
         "price": 160.00,
         "description": "Peacock 5 way colorful night crackers, 1 box"
       },
       {
-        "id": 79,
-        "name": "Mega/Bada Peacock",
+        "id": 80,
+        "name": "Mega / Bada Peacock",
         "category": "colorful-night",
-        "price": 380.00,
+        "price": 400.00,
         "description": "Mega/Bada Peacock colorful night crackers, 1 box"
       },
       {
-        "id": 80,
-        "name": "Crackling Fountain (3 pcs)",
+        "id": 81,
+        "name": "Full Crackling Fountain (3 Pcs)",
         "category": "colorful-night",
-        "price": 240.00,
+        "price": 280.00,
         "description": "Crackling Fountain, 3 pieces per box"
       },
       {
-        "id": 81,
+        "id": 82,
         "name": "Helicopter (5 pcs)",
         "category": "colorful-night",
         "price": 120.00,
         "description": "Helicopter crackers, 5 pieces per box"
       },
       {
-        "id": 82,
+        "id": 83,
         "name": "Bambaram (10 pcs)",
         "category": "colorful-night",
         "price": 130.00,
         "description": "Bambaram crackers, 10 pieces per box"
       },
       {
-        "id": 83,
-        "name": "Photo Flash (5 pcs)",
+        "id": 84,
+        "name": "Photo Flash Multi Color (5 pcs)",
         "category": "colorful-night",
-        "price": 60.00,
+        "price": 65.00,
         "description": "Photo Flash multi color, 5 pieces per box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Sparklers Festivals",
     "productlist": [
       {
-        "id": 84,
+        "id": 85,
         "name": "12 cm Electric Sparklers",
         "category": "sparklers",
         "price": 26.00,
         "description": "12 cm Electric sparkers, 1 box"
       },
       {
-        "id": 85,
-        "name": "12 cm Colors Sparklers",
+        "id": 86,
+        "name": "12 cm Crackling Sparklers",
         "category": "sparklers",
         "price": 30.00,
-        "description": "12 cm Colors sparkers, 1 box"
+        "description": "12 cm Crackling sparkers, 1 box"
       },
       {
-        "id": 86,
+        "id": 87,
         "name": "12 cm Green Sparklers",
         "category": "sparklers",
         "price": 32.00,
         "description": "12 cm Green sparkers, 1 box"
       },
       {
-        "id": 87,
+        "id": 88,
         "name": "12 cm Red Sparklers",
         "category": "sparklers",
         "price": 36.00,
         "description": "12 cm Red sparkers, 1 box"
       },
       {
-        "id": 88,
+        "id": 89,
         "name": "15 cm Electric Sparklers",
         "category": "sparklers",
         "price": 42.00,
         "description": "15 cm Electric sparkers, 1 box"
       },
       {
-        "id": 89,
-        "name": "15 cm Colors Sparklers",
+        "id": 90,
+        "name": "15 cm Crackling Sparklers",
         "category": "sparklers",
         "price": 46.00,
-        "description": "15 cm Colors sparkers, 1 box"
+        "description": "15 cm Crackling sparkers, 1 box"
       },
       {
-        "id": 90,
+        "id": 91,
         "name": "15 cm Green Sparklers",
         "category": "sparklers",
         "price": 50.00,
         "description": "15 cm Green sparkers, 1 box"
       },
       {
-        "id": 91,
+        "id": 92,
         "name": "15 cm Red Sparklers",
         "category": "sparklers",
         "price": 56.00,
         "description": "15 cm Red sparkers, 1 box"
       },
       {
-        "id": 92,
+        "id": 93,
         "name": "30 cm Electric Sparklers",
         "category": "sparklers",
         "price": 42.00,
         "description": "30 cm Electric sparkers, 1 box"
       },
       {
-        "id": 93,
-        "name": "30 cm Colors Sparklers",
+        "id": 94,
+        "name": "30 cm Crackling Sparklers",
         "category": "sparklers",
         "price": 46.00,
-        "description": "30 cm Colors sparkers, 1 box"
+        "description": "30 cm Crackling sparkers, 1 box"
       },
       {
-        "id": 94,
+        "id": 95,
         "name": "30 cm Green Sparklers",
         "category": "sparklers",
         "price": 50.00,
         "description": "30 cm Green sparkers, 1 box"
       },
       {
-        "id": 95,
+        "id": 96,
         "name": "30 cm Red Sparklers",
         "category": "sparklers",
         "price": 56.00,
         "description": "30 cm Red sparkers, 1 box"
       },
       {
-        "id": 96,
+        "id": 97,
         "name": "50 cm Electric Sparklers",
         "category": "sparklers",
         "price": 160.00,
-        "description": "50 cm Electric sparkers, 1 box"
-      },
-      {
-        "id": 97,
-        "name": "50 cm Color Sparklers",
-        "category": "sparklers",
-        "price": 180.00,
-        "description": "50 cm Color sparkers, 1 box"
+        "description": "50 cm Electric sparkers, 1 tube"
       },
       {
         "id": 98,
+        "name": "50 cm Crackling Sparklers",
+        "category": "sparklers",
+        "price": 180.00,
+        "description": "50 cm Crackling sparkers, 1 tube"
+      },
+      {
+        "id": 99,
         "name": "Rotating Sparklers",
         "category": "sparklers",
-        "price": 0.00,
+        "price": 200.00,
         "description": "Rotating Sparklers, 1 box"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Match Boxes",
     "productlist": [
       {
-        "id": 99,
-        "name": "Glamour 3 in 1",
-        "category": "match-boxes",
-        "price": 0.00,
-        "description": "Glamour 3 in 1 match boxes"
-      },
-      {
         "id": 100,
-        "name": "Samrat Jumbo (5 in 1)",
+        "name": "10 in 1 Match Box",
         "category": "match-boxes",
-        "price": 0.00,
-        "description": "Samrat Jumbo 5 in 1 match boxes"
-      },
-      {
-        "id": 101,
-        "name": "Majesty (10 in 1)",
-        "category": "match-boxes",
-        "price": 0.00,
-        "description": "Majesty 10 in 1 match boxes"
+        "price": 180.00,
+        "description": "10 in 1 match boxes"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Gift Boxed - Net Rate",
     "productlist": [
       {
-        "id": 102,
-        "name": "Bunny Gift Box",
+        "id": 101,
+        "name": "Bunny - Net Rate - 21 items",
         "category": "gift-boxes",
         "price": 350.00,
         "description": "Bunny gift box with 21 items"
       },
       {
-        "id": 103,
-        "name": "Siva Parvathy Gift Box",
+        "id": 102,
+        "name": "Siva Parvathy - Net Rate - 32 items",
         "category": "gift-boxes",
-        "price": 450.00,
+        "price": 600.00,
         "description": "Siva Parvathy gift box with 32 items"
       },
       {
-        "id": 104,
-        "name": "Tirupathi/Tusker Gift Box",
+        "id": 103,
+        "name": "Tirupathi / Tusker - Net Rate - 50 items",
         "category": "gift-boxes",
-        "price": 950.00,
+        "price": 1000.00,
         "description": "Tirupathi/Tusker gift box with 50 items"
       }
     ]
   },
   {
-    "categoryName": "Flower Pots / Color Pots",
+    "categoryName": "Wala",
     "productlist": [
       {
+        "id": 104,
+        "name": "1000 half Count",
+        "category": "wala",
+        "price": 200.00,
+        "description": "1000 half count wala crackers"
+      },
+      {
         "id": 105,
+        "name": "1000 Full Count",
+        "category": "wala",
+        "price": 400.00,
+        "description": "1000 full count wala crackers"
+      },
+      {
+        "id": 106,
+        "name": "5000 half Count",
+        "category": "wala",
+        "price": 1000.00,
+        "description": "5000 half count wala crackers"
+      },
+      {
+        "id": 107,
+        "name": "5000 Full Count",
+        "category": "wala",
+        "price": 2000.00,
+        "description": "5000 full count wala crackers"
+      }
+    ]
+  },
+  {
+    "categoryName": "Combo Festival Packs",
+    "productlist": [
+      {
+        "id": 108,
         "name": "Diwali Dhamaka Festival Pack",
         "category": "combo-packs",
         "price": 3500.00,
         "description": "Diwali Dhamaka Festival Pack"
       },
       {
-        "id": 106,
-        "name": "Royal Celebration Pack",
-        "category": "combo-packs",
-        "price": 5500.00,
-        "description": "Royal Celebration Pack"
-      },
-      {
-        "id": 107,
+        "id": 109,
         "name": "Family Kondattam Pack",
         "category": "combo-packs",
-        "price": 7500.00,
+        "price": 5500.00,
         "description": "Family Kondattam Pack"
       },
       {
-        "id": 108,
-        "name": "Happy Moments Pack",
+        "id": 110,
+        "name": "Thala Diwali Pack",
         "category": "combo-packs",
-        "price": 10000.00,
-        "description": "Happy Moments Pack"
+        "price": 10500.00,
+        "description": "Thala Diwali Pack"
       },
       {
-        "id": 109,
-        "name": "Thala Dewali Pack",
+        "id": 111,
+        "name": "Thala Thalapathi Pack",
         "category": "combo-packs",
-        "price": 20000.00,
-        "description": "Thala Dewali Pack"
+        "price": 20500.00,
+        "description": "Thala Thalapathi Pack"
       }
     ]
   }
