@@ -84,10 +84,14 @@ a:hover, a:focus {
     font-size: 1.8rem;
 }
 
-/* Mobile Toggle */
+/* Mobile Toggle
 .mobile-toggle {
-  display: none !important;
-}
+  display: block !important; Change from none to block 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+} */
 
 .bar {
   display: block;

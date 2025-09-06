@@ -7,7 +7,8 @@
         "name": "3 1/2 Lakshmi",
         "category": "one-sound",
         "price": 15.00,
-        "description": "3 1/2 inch Lakshmi crackers, 1 packet"
+        "description": "3 1/2 inch Lakshmi crackers, 1 packet",
+        "instagramLink": "https://www.instagram.com/p/CX8V9JZJQ6A/"
       },
       {
         "id": 2,
@@ -822,39 +823,6 @@
         "category": "gift-boxes",
         "price": 1000.00,
         "description": "Tirupathi/Tusker gift box with 50 items"
-      }
-    ]
-  },
-  {
-    "categoryName": "Wala",
-    "productlist": [
-      {
-        "id": 104,
-        "name": "1000 half Count",
-        "category": "wala",
-        "price": 200.00,
-        "description": "1000 half count wala crackers"
-      },
-      {
-        "id": 105,
-        "name": "1000 Full Count",
-        "category": "wala",
-        "price": 400.00,
-        "description": "1000 full count wala crackers"
-      },
-      {
-        "id": 106,
-        "name": "5000 half Count",
-        "category": "wala",
-        "price": 1000.00,
-        "description": "5000 half count wala crackers"
-      },
-      {
-        "id": 107,
-        "name": "5000 Full Count",
-        "category": "wala",
-        "price": 2000.00,
-        "description": "5000 full count wala crackers"
       }
     ]
   },
