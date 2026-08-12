@@ -42,25 +42,84 @@ const featuredProducts = [
   }
 ];
 
+// 2. BRANDS (for index.html "Shop By Brand" section)
+// Placeholder list - swap `logo` with a real image path (e.g. "assets/brands/ajanta.png")
+// once brand logos are available; the initials badge is shown until then.
+const brands = [
+  { name: "Ajanta", logo: "assets/brands/ajanta.png" },
+  { name: "Ananda's", logo: "assets/brands/anandas.png" },
+  { name: "Ayyan", logo: "assets/brands/ayyan.png" },
+  { name: "Bluestar", logo: "assets/brands/bluestar.png" },
+  { name: "Doctor's", logo: "assets/brands/doctors.png" },
+  { name: "Elephant", logo: "assets/brands/elephant.png" },
+  { name: "Maan", logo: "assets/brands/maan.png" },
+  { name: "Moorthys", logo: "assets/brands/moorthys.png" },
+  { name: "Pandian", logo: "assets/brands/pandian.png" },
+  { name: "Ravindra", logo: "assets/brands/ravindra.png" },
+  { name: "Shree Balaji Fireworks", logo: "assets/brands/shree-balaji.png" },
+  { name: "Sky King", logo: "assets/brands/sky-king.png" }
+];
+
+// 3. WHY CHOOSE US (for index.html, below Shop By Brand)
+const whyChooseUsItems = [
+  {
+    title: "Best Quality Crackers",
+    desc: "Every product is sourced from trusted Sivakasi manufacturers and checked for quality.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 6v6c0 5 3.8 8.5 9 10 5.2-1.5 9-5 9-10V6l-9-4Z"/><path d="m8.5 12 2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  },
+  {
+    title: "Wholesale & Retail",
+    desc: "Buy single boxes or stock up in bulk - pricing that works for families and dealers alike.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 2-1.6L21 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  },
+  {
+    title: "Secure Packaging",
+    desc: "Every order is carefully packed to keep your crackers safe and intact until they reach you.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M3 8 12 3l9 5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12v9M8 8v13M16 8v13" stroke-linecap="round"/></svg>'
+  },
+  {
+    title: "24/7 Support",
+    desc: "Our team is available round the clock to help with orders, queries, and delivery updates.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  },
+  {
+    title: "Fast Delivery",
+    desc: "Quick and reliable shipping across India, so your festival celebrations never have to wait.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="6" width="14" height="11" rx="1.2"/><path d="M15 10h4l3 3.5V17h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>'
+  },
+  {
+    title: "Safe & Trusted",
+    desc: "Licensed dealers following all statutory compliance, so you can celebrate with peace of mind.",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 6v6c0 5 3.8 8.5 9 10 5.2-1.5 9-5 9-10V6l-9-4Z"/></svg>'
+  }
+];
+
 // Category slug -> display label (used by the "All Products" toolbar)
 const categoryLabels = {
-  "one-sound": "One Sound Crackers & Bombs",
-  "ground-chakkar": "Ground Chakkar / Spinners",
-  "flower-pots": "Flower Pots / Color Pots",
-  "bijili": "Bijili Vedi / Crackers",
-  "twinkling-star": "Twinkling Star / Sattai",
-  "holding-magics": "Holding Magics with Hands",
-  "sky-shots": "Sky Shots",
-  "mega-sky-shots": "Mega Sky Shots",
-  "repeating-shots": "Repeating Multi Color Shots",
-  "fancy-shots": "Mega SET OUT - Fancy Shots",
+  "one-sound": "One Sound Crackers & Bomb",
+  "ground-chakkar": "Ground Chakkar",
+  "flower-pots": "Flower Pots",
+  "bijili": "Bijili Pack",
+  "twinkling-star": "Twinkling Star",
+  "holding-magics": "Hold On Hand",
+  "sky-shots": "Colors In Sky",
+  "mega-sky-shots-1": "Mega Sky Shot - Series 1",
+  "mega-sky-shots-2": "Mega Sky Shot - Series 2",
+  "mega-sky-shots-7wonder": "Mega Sky Shot - 7 Wonder Function",
+  "mega-sky-shots-3": "Mega Sky Shot - Series 3",
+  "mega-sky-shots-4": "Mega Sky Shot - Series 4",
+  "repeating-shots": "Repeating Multi Color with Crackling Shots",
+  "repeating-full-crackling": "Repeating Full Crackling Shots",
+  "fancy-shots": "Mega Setout",
   "whistle-fountain": "Whistle Fountain Series",
-  "kids-collection": "Kids Collection / Fountains",
-  "colorful-night": "Eye Catching Colorful Night Crackers",
-  "sparklers": "Sparklers Festival",
-  "match-boxes": "Match Boxes",
-  "gift-boxes": "Gift Boxes - Net Rate",
-  "combo-packs": "Combo Festival Packs - Net Rate"
+  "colorful-night-1": "Eye Catching Colorful Night Crackers - Series 1",
+  "colorful-night-2": "Eye Catching Colorful Night Crackers - Series 2",
+  "colorful-night-3": "Eye Catching Colorful Night Crackers - Series 3",
+  "chilled-mojito": "Chilled Mojitio Series",
+  "special-fountain": "Special Fountain Series",
+  "peacock-series": "Peacock Series",
+  "sparklers": "Sparklers",
+  "match-boxes": "Match Boxes"
 };
 
 let cachedProducts = null;
@@ -75,8 +134,12 @@ document.addEventListener('DOMContentLoaded', function() {
   buildGoogleReviewPopup();
 
   // Check which page we're on
-  if (document.getElementById('featuredProductsList')) {
-    renderFeaturedProducts(featuredProducts);
+  if (document.getElementById('brandGrid')) {
+    renderBrands(brands);
+  }
+
+  if (document.getElementById('whyChooseUsCards')) {
+    renderWhyChooseUs(whyChooseUsItems);
   }
 
   if (document.getElementById('allProductsList')) {
@@ -128,6 +191,44 @@ function renderFeaturedProducts(products) {
   if (!list) return;
 
   list.innerHTML = products.map(productListItemHtml).join('');
+}
+
+// ====================
+// SHOP BY BRAND (index.html)
+// ====================
+function renderBrands(brandList) {
+  const grid = document.getElementById('brandGrid');
+  if (!grid) return;
+
+  grid.innerHTML = brandList.map(brand => {
+    const initials = brand.name.replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase();
+    return `
+      <div class="brand-tile">
+        <div class="brand-logo">
+          <img src="${brand.logo}" alt="${brand.name}" loading="lazy"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <span class="brand-logo-fallback">${initials}</span>
+        </div>
+        <span class="brand-name">${brand.name}</span>
+      </div>
+    `;
+  }).join('');
+}
+
+// ====================
+// WHY CHOOSE US (index.html)
+// ====================
+function renderWhyChooseUs(items) {
+  const grid = document.getElementById('whyChooseUsCards');
+  if (!grid) return;
+
+  grid.innerHTML = items.map(item => `
+    <div class="feature-card">
+      <div class="feature-card-icon">${item.icon}</div>
+      <h3>${item.title}</h3>
+      <p>${item.desc}</p>
+    </div>
+  `).join('');
 }
 
 function productListItemHtml(product) {
@@ -192,12 +293,30 @@ function renderAllProductsList(allProducts) {
       (categoryLabels[a] || a).localeCompare(categoryLabels[b] || b)
     );
     allList.innerHTML = orderedCats.map(cat => `
-      <li class="category-group-header">${categoryLabels[cat] || cat}</li>
+      <li class="category-group-header" id="cat-${cat}">${categoryLabels[cat] || cat}</li>
       ${groups[cat].sort((a, b) => a.name.localeCompare(b.name)).map(productListItemHtml).join('')}
     `).join('');
+    renderCategoryChipNav(orderedCats);
   } else {
     allList.innerHTML = [...filtered].sort((a, b) => a.name.localeCompare(b.name)).map(productListItemHtml).join('');
+    renderCategoryChipNav([]);
   }
+}
+
+function renderCategoryChipNav(cats) {
+  const nav = document.getElementById('categoryChipNav');
+  if (!nav) return;
+
+  if (!cats.length) {
+    nav.innerHTML = '';
+    nav.style.display = 'none';
+    return;
+  }
+
+  nav.style.display = 'flex';
+  nav.innerHTML = cats.map(cat => `
+    <a href="#cat-${cat}" class="category-chip">${categoryLabels[cat] || cat}</a>
+  `).join('');
 }
 
 function setupProductsToolbar() {
@@ -417,20 +536,39 @@ function initPromoCarousel() {
   const slides = carousel.querySelectorAll('.promo-slide');
   const prevBtn = carousel.querySelector('.promo-prev');
   const nextBtn = carousel.querySelector('.promo-next');
+  const dotsContainer = carousel.querySelector('.promo-dots');
   let current = 0;
   let autoSlideInterval;
 
   if (!slides.length || !prevBtn || !nextBtn) return;
+
+  let dots = [];
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', function() {
+        showSlide(i);
+        resetAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
+    });
+    dots = Array.from(dotsContainer.children);
+  }
 
   function showSlide(nextIdx) {
     // Remove active class from all slides
     slides.forEach(slide => {
       slide.classList.remove('active');
     });
-    
+
     // Add active class to the new slide
     slides[nextIdx].classList.add('active');
     current = nextIdx;
+
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === nextIdx));
   }
 
   function nextSlide() {

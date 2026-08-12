@@ -378,7 +378,7 @@ async function handleCheckout() {
 
     doc.setFontSize(10);
     doc.setTextColor(60, 60, 60);
-    doc.text('123, Fireworks Road, Sivakasi, Tamil Nadu 626123', 14, 25);
+    doc.text('Door no : 261, 3C6, Sengamalanatchiyapuram Road, Thiruthangal, Tamil Nadu 626130', 14, 25);
     doc.text('Phone: +91 98765 43210  |  WhatsApp: +91 90250 86159', 14, 30);
 
     doc.setFontSize(12);

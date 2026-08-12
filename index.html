@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="icon" type="image/png" href="/favicon.png">
-<meta name="theme-color" content="#e65100">
+<meta name="theme-color" content="#5C1F19">
 <meta name="description" content="Pavalam Crackers &amp; Traders, Sivakasi - shop quality Diwali fireworks, sparklers, ground chakkars, flower pots, sky shots, kids crackers and combo festival packs at wholesale prices. Safe packaging, fast delivery, 24/7 support.">
 <meta name="keywords" content="Pavalam Crackers, Pavalam, pavalam, crackers, Sivakasi crackers, Diwali fireworks, festival crackers, wholesale crackers, best quality patakas, sparklers, rocket fireworks, crackers, pattas, fireworks, Sivakasi fireworks, Diwali special crackers, festival fireworks, wholesale fireworks, Sivakasi patakas, Sivakasi firecrackers, Sivakasi fireworks shop, Sivakasi firework store, Sivakasi firework shop, Sivakasi firework traders, Sivakasi firework manufacturers, Sivakasi firework suppliers, Sivakasi firework wholesale, Sivakasi firework online, Sivakasi firework delivery, Sivakasi firework shopping, Sivakasi firework offers, Sivakasi firework discounts, buy crackers online Sivakasi, Diwali crackers price list, cracker combo packs, gift box crackers, kids safe crackers, Sivakasi cracker wholesale dealers, online pattasu booking, Tamil Nadu fireworks shop, Sivakasi crackers direct from factory, ground chakkar crackers, flower pots crackers, sky shots crackers, whistle fountain crackers, twinkling star crackers, match box crackers, one sound crackers, bijili vedi crackers, best crackers shop Sivakasi, Sivakasi crackers online order">
   <link rel="canonical" href="https://pavalamcrackers.com/index.html">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<div class="announcement-bar">
+  <div class="announcement-track">
+    <span class="announcement-item">Welcome to Pavalam Crackers &amp; Traders, Sivakasi. Place your orders and our team will contact you soon. For any enquiry, call / WhatsApp <a href="tel:+919025086159">90250 86159</a>.</span>
+    <span class="announcement-item" aria-hidden="true">Welcome to Pavalam Crackers &amp; Traders, Sivakasi. Place your orders and our team will contact you soon. For any enquiry, call / WhatsApp <a href="tel:+919025086159">90250 86159</a>.</span>
+  </div>
+</div>
 <header class="main-header">
   <div class="header-container">
     <!-- Logo -->
@@ -36,10 +42,11 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html">Quick Order</a></li>
         
         <li><a href="about.html">About Us</a></li>
         <li><a href="safety-tips.html">Safety Tips</a></li>
+        <li><a href="assets/price-list.pdf" target="_blank" rel="noopener">Price List</a></li>
       </ul>
     </nav>
 
@@ -49,8 +56,8 @@
         <input type="text" name="q" placeholder="Search crackers..." aria-label="Search crackers">
         <button type="submit" aria-label="Search">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <circle cx="9" cy="9" r="7" stroke="#e65100" stroke-width="2"/>
-            <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="9" cy="9" r="7" stroke="#5C1F19" stroke-width="2"/>
+            <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="#5C1F19" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </button>
       </form>
@@ -60,29 +67,66 @@
   <main>
     <section class="promo-carousel" id="promoCarousel">
   <div class="promo-slide active">
-    <img src="/assets/mega_sale.png" alt="Diwali Offer">
+    <img src="/assets/hero-5.jpg" alt="Pavalam Crackers and Traders - Celebrate Every Moment With Brightness and Joy">
   </div>
   <div class="promo-slide">
-    <img src="/assets/offer.png" alt="Free Delivery">
+    <img src="/assets/hero-6.jpg" alt="Pavalam Crackers and Traders - Wide Range of Crackers, Best Prices">
+  </div>
+  <div class="promo-slide">
+    <img src="/assets/hero-7.jpg" alt="Pavalam Crackers and Traders - Celebrate With Family, Safe and Trusted Crackers">
   </div>
   <button class="promo-prev" aria-label="Previous">&#10094;</button>
   <button class="promo-next" aria-label="Next">&#10095;</button>
+  <div class="promo-dots"></div>
 </section>
-<section class="products" id="products">
-  <h2>Featured Crackers</h2>
-  <ul class="category-product-list" id="featuredProductsList"></ul>
-  <div class="feature-cards">
-    <div class="feature-card">
-      <h3>Secure Packaging</h3>
-      <p>Every order is carefully packed to keep your crackers safe and intact until they reach you.</p>
+<section class="brands" id="brands">
+  <h2>Shop By Brand</h2>
+  <div class="brand-grid" id="brandGrid"></div>
+</section>
+<section class="why-choose-us" id="whyChooseUs">
+  <h2>Why Choose Us</h2>
+  <p class="why-choose-us-subtitle">The crackers you can trust, from Sivakasi to your doorstep.</p>
+  <div class="feature-cards" id="whyChooseUsCards"></div>
+</section>
+<section class="quick-contact" id="quickContact">
+  <div class="quick-contact-inner">
+    <div class="quick-contact-info">
+      <span class="quick-contact-kicker">Store Status</span>
+      <h2>We're <span class="accent">Open</span> For You</h2>
+      <p>Our team is ready to help you pick the best crackers for every occasion. Reach out any time!</p>
+      <div class="store-status-pill">
+        <span class="status-dot"></span>
+        <div>
+          <strong>Store is Online</strong>
+          <p>You can browse and place your order right now</p>
+        </div>
+      </div>
     </div>
-    <div class="feature-card">
-      <h3>24/7 Support</h3>
-      <p>Our team is available round the clock to help with orders, queries, and delivery updates.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Fast Delivery</h3>
-      <p>Quick and reliable shipping across India, so your festival celebrations never have to wait.</p>
+    <div class="quick-contact-card">
+      <span class="quick-contact-kicker">Quick Contact</span>
+      <a href="tel:+919025086159" class="quick-contact-row">
+        <span class="quick-contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <strong>90250 86159</strong>
+      </a>
+      <a href="mailto:info@pavalamcrackers.com" class="quick-contact-row">
+        <span class="quick-contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <strong>info@pavalamcrackers.com</strong>
+      </a>
+      <a href="https://wa.me/919025086159" target="_blank" rel="noopener" class="quick-contact-row quick-contact-whatsapp">
+        <span class="quick-contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <strong>Chat on WhatsApp</strong>
+      </a>
+      <a href="mailto:info@pavalamcrackers.com" class="quick-contact-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Send us a Message
+        <span aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -106,8 +150,8 @@
       <div class="footer-section">
         <h4>Pavalam Crackers</h4>
         <p>
-          123, Fireworks Road,<br />
-          Sivakasi, Tamil Nadu 626123<br />
+          Door no : 261, 3C6, Sengamalanatchiyapuram Road,<br />
+          Thiruthangal, Tamil Nadu 626130<br />
           <a href="tel:+919876543210">+91 98765 43210</a><br />
           <a href="mailto:info@pavalamcrackers.com">info@pavalamcrackers.com</a>
         </p>
