@@ -593,11 +593,17 @@ a:hover, a:focus {
 }
 
 .brand-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
+  overflow-x: auto;
+}
+
+.brand-grid .brand-tile {
+  flex: 0 0 140px;
 }
 
 .brand-tile {
@@ -653,6 +659,13 @@ a:hover, a:focus {
   font-size: 0.95rem;
   font-weight: bold;
   color: var(--text-color);
+  text-align: center;
+}
+
+.brand-group {
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  margin-top: -6px;
 }
 
 /* ====== Why Choose Us ====== */

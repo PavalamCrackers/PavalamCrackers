@@ -43,21 +43,14 @@ const featuredProducts = [
 ];
 
 // 2. BRANDS (for index.html "Shop By Brand" section)
-// Placeholder list - swap `logo` with a real image path (e.g. "assets/brands/ajanta.png")
-// once brand logos are available; the initials badge is shown until then.
 const brands = [
-  { name: "Ajanta", logo: "assets/brands/ajanta.png" },
-  { name: "Ananda's", logo: "assets/brands/anandas.png" },
-  { name: "Ayyan", logo: "assets/brands/ayyan.png" },
-  { name: "Bluestar", logo: "assets/brands/bluestar.png" },
-  { name: "Doctor's", logo: "assets/brands/doctors.png" },
-  { name: "Elephant", logo: "assets/brands/elephant.png" },
-  { name: "Maan", logo: "assets/brands/maan.png" },
-  { name: "Moorthys", logo: "assets/brands/moorthys.png" },
-  { name: "Pandian", logo: "assets/brands/pandian.png" },
-  { name: "Ravindra", logo: "assets/brands/ravindra.png" },
-  { name: "Shree Balaji Fireworks", logo: "assets/brands/shree-balaji.png" },
-  { name: "Sky King", logo: "assets/brands/sky-king.png" }
+  { name: "Vimal Fireworks", logo: "assets/brands/vimal-cat.png" },
+  { name: "Mori Fireworks", logo: "assets/brands/mori.png" },
+  { name: "The Indian National Fireworks (INF)", logo: "assets/brands/elephant.png" },
+  { name: "Ayyan Fireworks", logo: "assets/brands/ayyan-bunny.jpeg" },
+  { name: "Vel Fireworks", logo: "assets/brands/vel-bee.png" },
+  { name: "Kalis Sparklers", logo: "assets/brands/sree-kalis.png" },
+  { name: "Kaliyammal Fireworks", logo: "assets/brands/kaliyammal-pigeon.jpeg" }
 ];
 
 // 3. WHY CHOOSE US (for index.html, below Shop By Brand)
@@ -210,6 +203,7 @@ function renderBrands(brandList) {
           <span class="brand-logo-fallback">${initials}</span>
         </div>
         <span class="brand-name">${brand.name}</span>
+        ${brand.group ? `<span class="brand-group">by ${brand.group}</span>` : ''}
       </div>
     `;
   }).join('');
@@ -289,8 +283,9 @@ function renderAllProductsList(allProducts) {
     filtered.forEach(p => {
       (groups[p.category] = groups[p.category] || []).push(p);
     });
+    const categoryOrder = Object.keys(categoryLabels);
     const orderedCats = Object.keys(groups).sort((a, b) =>
-      (categoryLabels[a] || a).localeCompare(categoryLabels[b] || b)
+      categoryOrder.indexOf(a) - categoryOrder.indexOf(b)
     );
     allList.innerHTML = orderedCats.map(cat => `
       <li class="category-group-header" id="cat-${cat}">${categoryLabels[cat] || cat}</li>
