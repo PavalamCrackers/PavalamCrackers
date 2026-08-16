@@ -44,10 +44,12 @@ async function loadAndSearchProducts(searchTerm) {
     const allProducts = await response.json();
     
     // Filter products based on search term
-    const results = allProducts.filter(p => 
-      p.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      p.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.category.toLowerCase().includes(searchTerm.toLowerCase())
+    const term = searchTerm.toLowerCase();
+    const results = allProducts.filter(p =>
+      p.name.toLowerCase().includes(term) ||
+      p.description.toLowerCase().includes(term) ||
+      p.category.toLowerCase().includes(term) ||
+      (p.keywords || '').toLowerCase().includes(term)
     );
     
     displaySearchResults(results, searchTerm);
@@ -71,13 +73,18 @@ function displaySearchResults(results, searchTerm) {
   
   searchMeta.textContent = `Showing ${results.length} results for: "${searchTerm}"`;
 
-  resultsContainer.innerHTML = results.map(product => `
+  resultsContainer.innerHTML = results.map(product => {
+    const hasPrice = product.price > 0;
+    const rate = product.price * 10;
+    return `
     <li class="product-list-item" data-id="${product.id}">
+      <div class="product-list-sno">${product.id}</div>
       <div class="product-list-info">
         <h3>${product.name}</h3>
-        <p class="product-list-desc">${product.description}</p>
       </div>
-      <div class="product-list-price">${product.price > 0 ? '₹' + product.price.toFixed(2) : 'Price on request'}</div>
+      <div class="product-list-qty">${product.description}</div>
+      <div class="product-list-rate">${hasPrice ? '₹' + rate.toFixed(2) : '-'}</div>
+      <div class="product-list-price">${hasPrice ? '₹' + product.price.toFixed(2) : 'Price on request'}</div>
       <div class="cart-add-controls">
         <div class="qty-stepper">
           <button type="button" class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
@@ -87,7 +94,8 @@ function displaySearchResults(results, searchTerm) {
         <button type="button" class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
       </div>
     </li>
-  `).join('');
+  `;
+  }).join('');
 }
 
 function showNoResultsMessage(message) {

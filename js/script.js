@@ -226,13 +226,17 @@ function renderWhyChooseUs(items) {
 }
 
 function productListItemHtml(product) {
+  const hasPrice = product.price > 0;
+  const rate = product.price * 10;
   return `
     <li class="product-list-item" data-id="${product.id}">
+      <div class="product-list-sno">${product.id}</div>
       <div class="product-list-info">
         <h3>${product.name}</h3>
-        <p class="product-list-desc">${product.description}</p>
       </div>
-      <div class="product-list-price">${product.price > 0 ? `₹${product.price.toFixed(2)}` : 'Price on request'}</div>
+      <div class="product-list-qty">${product.description}</div>
+      <div class="product-list-rate">${hasPrice ? `₹${rate.toFixed(2)}` : '-'}</div>
+      <div class="product-list-price">${hasPrice ? `₹${product.price.toFixed(2)}` : 'Price on request'}</div>
       ${cartControlsHtml(product.id)}
     </li>
   `;
@@ -266,13 +270,29 @@ function renderAllProductsList(allProducts) {
   const allList = document.getElementById('allProductsList');
   const categorySelect = document.getElementById('categoryFilter');
   const sortSelect = document.getElementById('sortBySelect');
+  const searchInput = document.getElementById('productSearchInput');
   if (!allList || !categorySelect || !sortSelect) return;
 
   cachedProducts = allProducts;
 
   const category = categorySelect.value;
   const sortMode = sortSelect.value;
-  const filtered = category === 'all' ? allProducts : allProducts.filter(p => p.category === category);
+  const searchTerm = (searchInput?.value || '').trim().toLowerCase();
+
+  let filtered = category === 'all' ? allProducts : allProducts.filter(p => p.category === category);
+  if (searchTerm) {
+    filtered = filtered.filter(p =>
+      p.name.toLowerCase().includes(searchTerm) ||
+      p.description.toLowerCase().includes(searchTerm) ||
+      (p.keywords || '').toLowerCase().includes(searchTerm)
+    );
+  }
+
+  if (!filtered.length) {
+    allList.innerHTML = '<li class="empty-message">No crackers found. Try a different search term.</li>';
+    renderCategoryChipNav([]);
+    return;
+  }
 
   if (sortMode === 'price-desc') {
     allList.innerHTML = [...filtered].sort((a, b) => comparePrice(a, b, 'desc')).map(productListItemHtml).join('');
@@ -289,7 +309,7 @@ function renderAllProductsList(allProducts) {
     );
     allList.innerHTML = orderedCats.map(cat => `
       <li class="category-group-header" id="cat-${cat}">${categoryLabels[cat] || cat}</li>
-      ${groups[cat].sort((a, b) => a.name.localeCompare(b.name)).map(productListItemHtml).join('')}
+      ${groups[cat].map(productListItemHtml).join('')}
     `).join('');
     renderCategoryChipNav(orderedCats);
   } else {
@@ -317,6 +337,7 @@ function renderCategoryChipNav(cats) {
 function setupProductsToolbar() {
   const categorySelect = document.getElementById('categoryFilter');
   const sortSelect = document.getElementById('sortBySelect');
+  const searchInput = document.getElementById('productSearchInput');
   if (!categorySelect || !sortSelect) return;
 
   populateCategoryFilter();
@@ -326,6 +347,12 @@ function setupProductsToolbar() {
       if (cachedProducts) renderAllProductsList(cachedProducts);
     });
   });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      if (cachedProducts) renderAllProductsList(cachedProducts);
+    });
+  }
 }
 
 // ====================
