@@ -245,17 +245,17 @@ function productListItemHtml(product) {
 // ====================
 // PRODUCTS PAGE - sort + category filter
 // ====================
-function populateCategoryFilter() {
-  const select = document.getElementById('categoryFilter');
-  if (!select || select.dataset.populated) return;
+let currentCategory = 'all';
 
-  Object.entries(categoryLabels).forEach(([slug, label]) => {
-    const option = document.createElement('option');
-    option.value = slug;
-    option.textContent = label;
-    select.appendChild(option);
-  });
-  select.dataset.populated = '1';
+function buildCategoriesPanel() {
+  const panel = document.getElementById('ofbCategoriesPanel');
+  if (!panel || panel.dataset.populated) return;
+
+  const options = [['all', 'All Categories'], ...Object.entries(categoryLabels)];
+  panel.innerHTML = options.map(([slug, label]) => `
+    <button type="button" class="ofb-cat-option${slug === currentCategory ? ' active' : ''}" data-value="${slug}">${label}</button>
+  `).join('');
+  panel.dataset.populated = '1';
 }
 
 // "Price on request" items (price 0) always sort last, regardless of direction
@@ -268,18 +268,16 @@ function comparePrice(a, b, direction) {
 
 function renderAllProductsList(allProducts) {
   const allList = document.getElementById('allProductsList');
-  const categorySelect = document.getElementById('categoryFilter');
   const sortSelect = document.getElementById('sortBySelect');
   const searchInput = document.getElementById('productSearchInput');
-  if (!allList || !categorySelect || !sortSelect) return;
+  if (!allList || !sortSelect) return;
 
   cachedProducts = allProducts;
 
-  const category = categorySelect.value;
   const sortMode = sortSelect.value;
   const searchTerm = (searchInput?.value || '').trim().toLowerCase();
 
-  let filtered = category === 'all' ? allProducts : allProducts.filter(p => p.category === category);
+  let filtered = currentCategory === 'all' ? allProducts : allProducts.filter(p => p.category === currentCategory);
   if (searchTerm) {
     filtered = filtered.filter(p =>
       p.name.toLowerCase().includes(searchTerm) ||
@@ -290,7 +288,6 @@ function renderAllProductsList(allProducts) {
 
   if (!filtered.length) {
     allList.innerHTML = '<li class="empty-message">No crackers found. Try a different search term.</li>';
-    renderCategoryChipNav([]);
     return;
   }
 
@@ -311,46 +308,80 @@ function renderAllProductsList(allProducts) {
       <li class="category-group-header" id="cat-${cat}">${categoryLabels[cat] || cat}</li>
       ${groups[cat].map(productListItemHtml).join('')}
     `).join('');
-    renderCategoryChipNav(orderedCats);
   } else {
     allList.innerHTML = [...filtered].sort((a, b) => a.name.localeCompare(b.name)).map(productListItemHtml).join('');
-    renderCategoryChipNav([]);
   }
 }
 
-function renderCategoryChipNav(cats) {
-  const nav = document.getElementById('categoryChipNav');
-  if (!nav) return;
+async function updateOfbCartStats() {
+  const itemsEl = document.getElementById('ofbItemsCount');
+  const totalEl = document.getElementById('ofbTotal');
+  if (!itemsEl || !totalEl || typeof Cart === 'undefined') return;
 
-  if (!cats.length) {
-    nav.innerHTML = '';
-    nav.style.display = 'none';
-    return;
-  }
+  itemsEl.textContent = Cart.getCount();
 
-  nav.style.display = 'flex';
-  nav.innerHTML = cats.map(cat => `
-    <a href="#cat-${cat}" class="category-chip">${categoryLabels[cat] || cat}</a>
-  `).join('');
+  const items = await Cart.getItemsWithDetails();
+  const total = items.reduce((sum, p) => sum + (p.price > 0 ? p.price * p.qty : 0), 0);
+  totalEl.textContent = '₹' + total.toFixed(2).replace(/\.00$/, '');
 }
 
 function setupProductsToolbar() {
-  const categorySelect = document.getElementById('categoryFilter');
   const sortSelect = document.getElementById('sortBySelect');
   const searchInput = document.getElementById('productSearchInput');
-  if (!categorySelect || !sortSelect) return;
+  const categoriesBtn = document.getElementById('ofbCategoriesBtn');
+  const categoriesPanel = document.getElementById('ofbCategoriesPanel');
+  const searchBtn = document.getElementById('ofbSearchBtn');
+  if (!sortSelect) return;
 
-  populateCategoryFilter();
+  buildCategoriesPanel();
+  updateOfbCartStats();
 
-  [categorySelect, sortSelect].forEach(select => {
-    select.addEventListener('change', () => {
-      if (cachedProducts) renderAllProductsList(cachedProducts);
-    });
+  sortSelect.addEventListener('change', () => {
+    if (cachedProducts) renderAllProductsList(cachedProducts);
   });
 
   if (searchInput) {
     searchInput.addEventListener('input', () => {
       if (cachedProducts) renderAllProductsList(cachedProducts);
+    });
+  }
+
+  if (categoriesBtn && categoriesPanel) {
+    categoriesBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = !categoriesPanel.hidden;
+      categoriesPanel.hidden = isOpen;
+      categoriesBtn.classList.toggle('active', !isOpen);
+      categoriesBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    categoriesPanel.addEventListener('click', (e) => {
+      const btn = e.target.closest('.ofb-cat-option');
+      if (!btn) return;
+      currentCategory = btn.dataset.value;
+      categoriesPanel.querySelectorAll('.ofb-cat-option').forEach(o => o.classList.toggle('active', o === btn));
+      categoriesPanel.hidden = true;
+      categoriesBtn.classList.remove('active');
+      categoriesBtn.setAttribute('aria-expanded', 'false');
+      if (cachedProducts) renderAllProductsList(cachedProducts);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!categoriesPanel.hidden && !categoriesPanel.contains(e.target) && e.target !== categoriesBtn && !categoriesBtn.contains(e.target)) {
+        categoriesPanel.hidden = true;
+        categoriesBtn.classList.remove('active');
+        categoriesBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener('click', () => {
+      const willShow = searchInput.hidden;
+      searchInput.hidden = !willShow;
+      searchBtn.classList.toggle('active', willShow);
+      searchBtn.setAttribute('aria-expanded', String(willShow));
+      if (willShow) searchInput.focus();
     });
   }
 }

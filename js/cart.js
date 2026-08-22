@@ -81,6 +81,7 @@ const Cart = {
     setCookie(CART_COOKIE, JSON.stringify(this.items), CART_COOKIE_DAYS);
     renderBadge();
     if (drawerOpen) renderDrawer();
+    if (typeof updateOfbCartStats === 'function') updateOfbCartStats();
   },
 
   add(id, qty) {
@@ -558,4 +559,5 @@ document.addEventListener('DOMContentLoaded', function() {
   buildCartUI();
   renderBadge();
   setupCartEvents();
+  if (typeof updateOfbCartStats === 'function') updateOfbCartStats();
 });
