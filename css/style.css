@@ -1643,16 +1643,16 @@ a:hover, a:focus {
         order: 3;
     }
 
-    .ofb-sort {
-        width: 100%;
-        justify-content: center;
-        order: 4;
-    }
-
     .ofb-checkout-btn {
         width: 100%;
         justify-content: center;
         margin-left: 0;
+        order: 4;
+    }
+
+    .ofb-sort {
+        width: 100%;
+        justify-content: center;
         order: 5;
     }
 

@@ -88,31 +88,35 @@ const whyChooseUsItems = [
 ];
 
 // Category slug -> display label (used by the "All Products" toolbar)
+// Order matches the 2026 price list exactly.
 const categoryLabels = {
   "one-sound": "One Sound Crackers & Bomb",
-  "ground-chakkar": "Ground Chakkar",
-  "flower-pots": "Flower Pots",
-  "bijili": "Bijili Pack",
-  "twinkling-star": "Twinkling Star",
-  "holding-magics": "Hold On Hand",
-  "sky-shots": "Colors In Sky",
-  "mega-sky-shots-1": "Mega Sky Shot - Series 1",
-  "mega-sky-shots-2": "Mega Sky Shot - Series 2",
-  "mega-sky-shots-7wonder": "Mega Sky Shot - 7 Wonder Function",
-  "mega-sky-shots-3": "Mega Sky Shot - Series 3",
+  "ground-chakkar": "Ground Chakkar / Spinners",
+  "flower-pots": "Flower Pots / Color Pots",
+  "bijili": "Bijili Crackers",
+  "twinkling-star": "Twinkling Star / Sattai",
+  "holding-magics": "Holding Magics With Hands",
+  "sky-shots": "Sky Shots",
+  "mega-sky-shots-1": "Mega Sky Shots - Series 1",
+  "mega-sky-shots-7wonder": "Mega Sky Shots - 7 Step / Wonder Function - Series 2",
+  "mega-sky-shots-3": "Mega Sky Shot With Boom Effect - Series 3",
   "mega-sky-shots-4": "Mega Sky Shot - Series 4",
-  "repeating-shots": "Repeating Multi Color with Crackling Shots",
+  "mega-sky-shots-5": "Mega Sky Shot - Series 5",
+  "repeating-shots": "Repeating Shots With Crackling Effect",
   "repeating-full-crackling": "Repeating Full Crackling Shots",
-  "fancy-shots": "Mega Setout",
+  "fancy-shots": "Mega Set Out - Fancy Shots",
   "whistle-fountain": "Whistle Fountain Series",
+  "kids-collection": "Kids Collection / Kids Fountains",
   "colorful-night-1": "Eye Catching Colorful Night Crackers - Series 1",
   "colorful-night-2": "Eye Catching Colorful Night Crackers - Series 2",
-  "colorful-night-3": "Eye Catching Colorful Night Crackers - Series 3",
   "chilled-mojito": "Chilled Mojitio Series",
-  "special-fountain": "Special Fountain Series",
-  "peacock-series": "Peacock Series",
-  "sparklers": "Sparklers",
-  "match-boxes": "Match Boxes"
+  "special-fountain": "Beautiful & Special Fountain Limited Crackers",
+  "peacock-series": "Mini & Mega Peacock",
+  "sparklers": "Sparklers Festival",
+  "match-boxes": "Match Boxes",
+  "festival-crackers": "Festival Crackers",
+  "gift-boxes": "Gift Boxes - Limited Pcs Only",
+  "combo-packs": "Combo Festival Packs"
 };
 
 let cachedProducts = null;
@@ -227,7 +231,7 @@ function renderWhyChooseUs(items) {
 
 function productListItemHtml(product) {
   const hasPrice = product.price > 0;
-  const rate = product.price * 10;
+  const hasRate = typeof product.rate === 'number' && product.rate > product.price;
   return `
     <li class="product-list-item" data-id="${product.id}">
       <div class="product-list-sno">${product.id}</div>
@@ -235,7 +239,7 @@ function productListItemHtml(product) {
         <h3>${product.name}</h3>
       </div>
       <div class="product-list-qty">${product.description}</div>
-      <div class="product-list-rate">${hasPrice ? `₹${rate.toFixed(2)}` : '-'}</div>
+      <div class="product-list-rate">${hasRate ? `₹${product.rate.toFixed(2)}` : ''}</div>
       <div class="product-list-price">${hasPrice ? `₹${product.price.toFixed(2)}` : 'Price on request'}</div>
       ${cartControlsHtml(product.id)}
     </li>
