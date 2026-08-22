@@ -240,8 +240,14 @@ a:hover, a:focus {
   opacity: 1;
 }
 
+.header-social a.header-map {
+  color: #ea4335;
+  opacity: 1;
+}
+
 .header-social a.header-whatsapp:hover,
-.header-social a.header-instagram:hover {
+.header-social a.header-instagram:hover,
+.header-social a.header-map:hover {
   filter: brightness(1.15);
 }
 
@@ -1601,6 +1607,30 @@ a:hover, a:focus {
     box-shadow: 0 0 0 2px var(--shadow-color);
 }
 
+.ofb-checkout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin-left: auto;
+    background: #1f9d63;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(31, 157, 99, 0.35);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.ofb-checkout-btn:hover {
+    background: #187f50;
+    transform: translateY(-1px);
+}
+
 @media (max-width: 700px) {
     .order-floating-bar {
         border-radius: 18px;
@@ -1617,6 +1647,13 @@ a:hover, a:focus {
         width: 100%;
         justify-content: center;
         order: 4;
+    }
+
+    .ofb-checkout-btn {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        order: 5;
     }
 
     .ofb-search-input {

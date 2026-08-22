@@ -331,6 +331,7 @@ function setupProductsToolbar() {
   const categoriesBtn = document.getElementById('ofbCategoriesBtn');
   const categoriesPanel = document.getElementById('ofbCategoriesPanel');
   const searchBtn = document.getElementById('ofbSearchBtn');
+  const checkoutBtn = document.getElementById('ofbCheckoutBtn');
   if (!sortSelect) return;
 
   buildCategoriesPanel();
@@ -382,6 +383,12 @@ function setupProductsToolbar() {
       searchBtn.classList.toggle('active', willShow);
       searchBtn.setAttribute('aria-expanded', String(willShow));
       if (willShow) searchInput.focus();
+    });
+  }
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+      if (typeof openDrawer === 'function') openDrawer();
     });
   }
 }
