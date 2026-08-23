@@ -329,6 +329,34 @@ async function updateOfbCartStats() {
   totalEl.textContent = '₹' + total.toFixed(2).replace(/\.00$/, '');
 }
 
+let ofbSentinelObserver = null;
+
+function updateOfbBarHeightVar() {
+  const bar = document.getElementById('orderFloatingBar');
+  if (!bar) return;
+  document.documentElement.style.setProperty('--ofb-height', `${bar.offsetHeight}px`);
+}
+
+// Toggles the floating bar between its normal in-flow position and a
+// fixed, always-visible state once the page is scrolled past it —
+// CSS position:sticky isn't reliable here because of the overflow-x:
+// hidden set on html/body elsewhere, so this reimplements the same
+// behavior with an IntersectionObserver watching a sentinel placed
+// right where the bar naturally sits.
+function setupOfbStickyFallback() {
+  const bar = document.getElementById('orderFloatingBar');
+  const sentinel = document.getElementById('ofbSentinel');
+  if (!bar || !sentinel || typeof IntersectionObserver === 'undefined') return;
+
+  if (ofbSentinelObserver) ofbSentinelObserver.disconnect();
+
+  ofbSentinelObserver = new IntersectionObserver(([entry]) => {
+    bar.classList.toggle('is-fixed', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+  }, { threshold: 0 });
+
+  ofbSentinelObserver.observe(sentinel);
+}
+
 function setupProductsToolbar() {
   const sortSelect = document.getElementById('sortBySelect');
   const searchInput = document.getElementById('productSearchInput');
@@ -340,6 +368,12 @@ function setupProductsToolbar() {
 
   buildCategoriesPanel();
   updateOfbCartStats();
+  updateOfbBarHeightVar();
+  setupOfbStickyFallback();
+  window.addEventListener('resize', () => {
+    updateOfbBarHeightVar();
+    setupOfbStickyFallback();
+  });
 
   sortSelect.addEventListener('change', () => {
     if (cachedProducts) renderAllProductsList(cachedProducts);
@@ -387,6 +421,7 @@ function setupProductsToolbar() {
       searchBtn.classList.toggle('active', willShow);
       searchBtn.setAttribute('aria-expanded', String(willShow));
       if (willShow) searchInput.focus();
+      updateOfbBarHeightVar();
     });
   }
 

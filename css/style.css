@@ -1415,10 +1415,13 @@ a:hover, a:focus {
 }
 
 /* ---- Quick Order floating toolbar ---- */
+.ofb-sentinel {
+    height: 1px;
+}
+
 .order-floating-bar {
-    position: sticky;
-    top: 10px;
-    z-index: 40;
+    position: relative;
+    z-index: 500;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1429,6 +1432,23 @@ a:hover, a:focus {
     background: var(--white);
     border-radius: 999px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.order-floating-bar.is-fixed {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    margin: 0;
+}
+
+.ofb-spacer {
+    height: 0;
+}
+
+.order-floating-bar.is-fixed + .ofb-spacer {
+    height: var(--ofb-height, 76px);
 }
 
 .ofb-group {
