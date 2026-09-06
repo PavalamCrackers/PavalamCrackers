@@ -1355,6 +1355,85 @@ a:hover, a:focus {
     padding: 16px 20px;
 }
 
+/* ---- Price List page ---- */
+.price-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.price-list-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 26px 22px;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.price-list-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+    border-color: var(--primary-light);
+}
+
+.price-list-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: var(--hover-bg);
+    color: var(--primary-dark);
+}
+
+.price-list-card-icon-combo {
+    background: #fdecc8;
+    color: #b5720a;
+}
+
+.price-list-card-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.price-list-card h3 {
+    margin: 4px 0 0;
+    font-size: 1.15rem;
+    color: var(--text-color);
+}
+
+.price-list-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.75;
+    flex: 1;
+}
+
+.price-list-card-cta {
+    margin-top: 6px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
 /* ---- Products toolbar (All Products: sort + category filter) ---- */
 .products-toolbar {
     display: flex;

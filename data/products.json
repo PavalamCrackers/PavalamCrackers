@@ -4,90 +4,90 @@
     "name": "3 1/2\" Lakshmi",
     "category": "one-sound",
     "price": 16,
+    "rate": 150,
     "description": "1 Pkt",
-    "keywords": "3 1/2 Lakshmi, One Sound Crackers & Bomb, 3 1/2 Lakshmi Sivakasi",
-    "rate": 150
+    "keywords": "3 1/2 Lakshmi, One Sound Crackers & Bomb, 3 1/2 Lakshmi Sivakasi"
   },
   {
     "id": 2,
     "name": "4\" Gold Lakshmi",
     "category": "one-sound",
     "price": 30,
+    "rate": 300,
     "description": "1 Pkt",
-    "keywords": "4 Gold Lakshmi, One Sound Crackers & Bomb, 4 Gold Lakshmi Sivakasi",
-    "rate": 300
+    "keywords": "4 Gold Lakshmi, One Sound Crackers & Bomb, 4 Gold Lakshmi Sivakasi"
   },
   {
     "id": 3,
     "name": "4\" Mori Delxue Crackers",
     "category": "one-sound",
     "price": 60,
+    "rate": 600,
     "description": "1 Pkt",
-    "keywords": "4 Mori Delxue Crackers, One Sound Crackers & Bomb, 4 Mori Delxue Crackers Sivakasi",
-    "rate": 600
+    "keywords": "4 Mori Delxue Crackers, One Sound Crackers & Bomb, 4 Mori Delxue Crackers Sivakasi"
   },
   {
     "id": 4,
     "name": "Bhaguballi - 25 Ply Mega Size",
     "category": "one-sound",
     "price": 89,
+    "rate": 890,
     "description": "1 Pkt",
-    "keywords": "Bhaguballi - 25 Ply Mega Size, One Sound Crackers & Bomb, Bhaguballi - 25 Ply Mega Size Sivakasi",
-    "rate": 890
+    "keywords": "Bhaguballi - 25 Ply Mega Size, One Sound Crackers & Bomb, Bhaguballi - 25 Ply Mega Size Sivakasi"
   },
   {
     "id": 5,
     "name": "Sonny Bomb / Green Bomb",
     "category": "one-sound",
     "price": 160,
+    "rate": 1600,
     "description": "1 Box",
-    "keywords": "Sonny Bomb / Green Bomb, One Sound Crackers & Bomb, Sonny Bomb / Green Bomb Sivakasi",
-    "rate": 1600
+    "keywords": "Sonny Bomb / Green Bomb, One Sound Crackers & Bomb, Sonny Bomb / Green Bomb Sivakasi"
   },
   {
     "id": 6,
     "name": "Mini Par Bomb",
     "category": "one-sound",
     "price": 50,
+    "rate": 500,
     "description": "1 Box",
-    "keywords": "Mini Par Bomb, One Sound Crackers & Bomb, Mini Par Bomb Sivakasi",
-    "rate": 500
+    "keywords": "Mini Par Bomb, One Sound Crackers & Bomb, Mini Par Bomb Sivakasi"
   },
   {
     "id": 7,
     "name": "Medium Par Bomb",
     "category": "one-sound",
     "price": 100,
+    "rate": 1000,
     "description": "1 Box",
-    "keywords": "Medium Par Bomb, One Sound Crackers & Bomb, Medium Par Bomb Sivakasi",
-    "rate": 1000
+    "keywords": "Medium Par Bomb, One Sound Crackers & Bomb, Medium Par Bomb Sivakasi"
   },
   {
     "id": 8,
     "name": "Ground Chakkar Special (10 pcs)",
     "category": "ground-chakkar",
     "price": 88,
+    "rate": 880,
     "description": "1 Box",
-    "keywords": "Ground Chakkar Special 10 pcs, Ground Chakkar / Spinners, Ground Chakkar Special 10 pcs Sivakasi",
-    "rate": 880
+    "keywords": "Ground Chakkar Special 10 pcs, Ground Chakkar / Spinners, Ground Chakkar Special 10 pcs Sivakasi"
   },
   {
     "id": 9,
     "name": "Spinner Special / Plastic Base (10 Pcs)",
     "category": "ground-chakkar",
     "price": 140,
+    "rate": 1400,
     "description": "1 Box",
-    "keywords": "Spinner Special / Plastic Base 10 Pcs, Ground Chakkar / Spinners, Spinner Special / Plastic Base 10 Pcs Sivakasi",
-    "rate": 1400
+    "keywords": "Spinner Special / Plastic Base 10 Pcs, Ground Chakkar / Spinners, Spinner Special / Plastic Base 10 Pcs Sivakasi"
   },
   {
     "id": 10,
     "name": "Spinner Deluxe / Plastic Base (10 Pcs)",
     "category": "ground-chakkar",
     "price": 220,
+    "rate": 2200,
     "description": "1 Box",
     "keywords": "Spinner Deluxe / Plastic Base 10 Pcs, Ground Chakkar / Spinners, Spinner Deluxe / Plastic Base 10 Pcs Sivakasi",
-    "rate": 2200,
     "video": "https://www.instagram.com/reel/Dc1RrWwBVbH/?igsi=MWlhcnJpMGxudmRkMQ=="
   },
   {
@@ -95,18 +95,18 @@
     "name": "Pink & Orange Wheel (5 pcs)",
     "category": "ground-chakkar",
     "price": 220,
+    "rate": 2200,
     "description": "1 Box",
-    "keywords": "Pink & Orange Wheel 5 pcs, Ground Chakkar / Spinners, Pink & Orange Wheel 5 pcs Sivakasi",
-    "rate": 2200
+    "keywords": "Pink & Orange Wheel 5 pcs, Ground Chakkar / Spinners, Pink & Orange Wheel 5 pcs Sivakasi"
   },
   {
     "id": 12,
     "name": "Planet Wheel Show (Crackling Effect)",
     "category": "ground-chakkar",
     "price": 240,
+    "rate": 2400,
     "description": "1 Box",
     "keywords": "Planet Wheel Show Crackling Effect, Ground Chakkar / Spinners, Planet Wheel Show Crackling Effect Sivakasi",
-    "rate": 2400,
     "video": "https://www.instagram.com/reel/DN6AC_YASBn/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -114,9 +114,9 @@
     "name": "4 * 4 Wheel - Lotus Effect",
     "category": "ground-chakkar",
     "price": 155,
+    "rate": 1550,
     "description": "1 Box",
     "keywords": "4 * 4 Wheel - Lotus Effect, Ground Chakkar / Spinners, 4 * 4 Wheel - Lotus Effect Sivakasi",
-    "rate": 1550,
     "video": "https://www.instagram.com/reel/DNqR0RKB5f8/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -124,45 +124,45 @@
     "name": "Flower Pots Big (10 pcs)",
     "category": "flower-pots",
     "price": 80,
+    "rate": 800,
     "description": "1 Box",
-    "keywords": "Flower Pots Big 10 pcs, Flower Pots / Color Pots, Flower Pots Big 10 pcs Sivakasi",
-    "rate": 800
+    "keywords": "Flower Pots Big 10 pcs, Flower Pots / Color Pots, Flower Pots Big 10 pcs Sivakasi"
   },
   {
     "id": 15,
     "name": "Flower Pots Ashoka (10 pcs)",
     "category": "flower-pots",
     "price": 130,
+    "rate": 1300,
     "description": "1 Box",
-    "keywords": "Flower Pots Ashoka 10 pcs, Flower Pots / Color Pots, Flower Pots Ashoka 10 pcs Sivakasi",
-    "rate": 1300
+    "keywords": "Flower Pots Ashoka 10 pcs, Flower Pots / Color Pots, Flower Pots Ashoka 10 pcs Sivakasi"
   },
   {
     "id": 16,
     "name": "Flower Pots Color Koti (10 pcs)",
     "category": "flower-pots",
     "price": 195,
+    "rate": 1950,
     "description": "1 Box",
-    "keywords": "Flower Pots Color Koti 10 pcs, Flower Pots / Color Pots, Flower Pots Color Koti 10 pcs Sivakasi",
-    "rate": 1950
+    "keywords": "Flower Pots Color Koti 10 pcs, Flower Pots / Color Pots, Flower Pots Color Koti 10 pcs Sivakasi"
   },
   {
     "id": 17,
     "name": "Flower Pots Color Koti Deluxe (10 Pcs) - Mega Size",
     "category": "flower-pots",
     "price": 430,
+    "rate": 4300,
     "description": "1 Box",
-    "keywords": "Flower Pots Color Koti Deluxe 10 Pcs - Mega Size, Flower Pots / Color Pots, Flower Pots Color Koti Deluxe 10 Pcs - Mega Size Sivakasi",
-    "rate": 4300
+    "keywords": "Flower Pots Color Koti Deluxe 10 Pcs - Mega Size, Flower Pots / Color Pots, Flower Pots Color Koti Deluxe 10 Pcs - Mega Size Sivakasi"
   },
   {
     "id": 18,
     "name": "Color Pots Deluxe (Different Color 5 pcs) Spl",
     "category": "flower-pots",
     "price": 280,
+    "rate": 2800,
     "description": "1 Box",
     "keywords": "Color Pots Deluxe Different Color 5 pcs Spl, Flower Pots / Color Pots, Color Pots Deluxe Different Color 5 pcs Spl Sivakasi",
-    "rate": 2800,
     "video": "https://www.instagram.com/reel/DMnlUzbhU-t/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -170,54 +170,54 @@
     "name": "Bharath Koti - 2 pcs - Ultra Mega Size",
     "category": "flower-pots",
     "price": 260,
+    "rate": 2600,
     "description": "1 Box",
-    "keywords": "Bharath Koti - 2 pcs - Ultra Mega Size, Flower Pots / Color Pots, Bharath Koti - 2 pcs - Ultra Mega Size Sivakasi",
-    "rate": 2600
+    "keywords": "Bharath Koti - 2 pcs - Ultra Mega Size, Flower Pots / Color Pots, Bharath Koti - 2 pcs - Ultra Mega Size Sivakasi"
   },
   {
     "id": 20,
     "name": "Bijili Mega Power",
     "category": "bijili",
     "price": 38,
+    "rate": 360,
     "description": "1 Pkt",
-    "keywords": "Bijili Mega Power, Bijili Crackers, Bijili Mega Power Sivakasi",
-    "rate": 360
+    "keywords": "Bijili Mega Power, Bijili Crackers, Bijili Mega Power Sivakasi"
   },
   {
     "id": 21,
     "name": "Mini Twinkling Star",
     "category": "twinkling-star",
     "price": 32,
+    "rate": 320,
     "description": "1 Box",
-    "keywords": "Mini Twinkling Star, Twinkling Star / Sattai, Mini Twinkling Star Sivakasi",
-    "rate": 320
+    "keywords": "Mini Twinkling Star, Twinkling Star / Sattai, Mini Twinkling Star Sivakasi"
   },
   {
     "id": 22,
     "name": "Mega Twinkling Star",
     "category": "twinkling-star",
     "price": 85,
+    "rate": 850,
     "description": "1 Box",
-    "keywords": "Mega Twinkling Star, Twinkling Star / Sattai, Mega Twinkling Star Sivakasi",
-    "rate": 850
+    "keywords": "Mega Twinkling Star, Twinkling Star / Sattai, Mega Twinkling Star Sivakasi"
   },
   {
     "id": 23,
     "name": "Smoke",
     "category": "holding-magics",
     "price": 138,
+    "rate": 1380,
     "description": "1 Box",
-    "keywords": "Smoke, Holding Magics With Hands, Smoke Sivakasi",
-    "rate": 1380
+    "keywords": "Smoke, Holding Magics With Hands, Smoke Sivakasi"
   },
   {
     "id": 24,
     "name": "AK 47 Gun - Mass Effect",
     "category": "holding-magics",
     "price": 270,
+    "rate": 2700,
     "description": "1 Box",
     "keywords": "AK 47 Gun - Mass Effect, Holding Magics With Hands, AK 47 Gun - Mass Effect Sivakasi",
-    "rate": 2700,
     "video": "https://www.instagram.com/reel/DM1cWRWBqqz/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -225,18 +225,18 @@
     "name": "Wire Chakkar Special (10 pcs)",
     "category": "holding-magics",
     "price": 175,
+    "rate": 1750,
     "description": "1 Box",
-    "keywords": "Wire Chakkar Special 10 pcs, Holding Magics With Hands, Wire Chakkar Special 10 pcs Sivakasi",
-    "rate": 1750
+    "keywords": "Wire Chakkar Special 10 pcs, Holding Magics With Hands, Wire Chakkar Special 10 pcs Sivakasi"
   },
   {
     "id": 26,
     "name": "Fuji Candle (5 pcs)",
     "category": "holding-magics",
     "price": 270,
+    "rate": 2700,
     "description": "1 Box",
     "keywords": "Fuji Candle 5 pcs, Holding Magics With Hands, Fuji Candle 5 pcs Sivakasi",
-    "rate": 2700,
     "video": "https://www.instagram.com/reel/DN7CgdBgUAC/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -244,9 +244,9 @@
     "name": "7 shot or Crackling Red Shot (5 pcs)",
     "category": "sky-shots",
     "price": 200,
+    "rate": 1800,
     "description": "1 Box",
     "keywords": "7 shot or Crackling Red Shot 5 pcs, Sky Shots, 7 shot or Crackling Red Shot 5 pcs Sivakasi",
-    "rate": 1800,
     "video": "https://www.instagram.com/reel/DOESRsagUNJ/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -254,63 +254,63 @@
     "name": "Penta Plus - Mori - (5 pcs) - Spl",
     "category": "sky-shots",
     "price": 210,
+    "rate": 2100,
     "description": "1 Box",
-    "keywords": "Penta Plus - Mori - 5 pcs - Spl, Sky Shots, Penta Plus - Mori - 5 pcs - Spl Sivakasi",
-    "rate": 2100
+    "keywords": "Penta Plus - Mori - 5 pcs - Spl, Sky Shots, Penta Plus - Mori - 5 pcs - Spl Sivakasi"
   },
   {
     "id": 29,
     "name": "Special Color Sky Shot - 3 pcs - Pink, Red, Blue",
     "category": "sky-shots",
     "price": 600,
+    "rate": 6000,
     "description": "1 Box",
-    "keywords": "Special Color Sky Shot - 3 pcs - Pink, Red, Blue, Sky Shots, Special Color Sky Shot - 3 pcs - Pink, Red, Blue Sivakasi",
-    "rate": 6000
+    "keywords": "Special Color Sky Shot - 3 pcs - Pink, Red, Blue, Sky Shots, Special Color Sky Shot - 3 pcs - Pink, Red, Blue Sivakasi"
   },
   {
     "id": 30,
     "name": "Violet Vulture / Red Virgina",
     "category": "mega-sky-shots-1",
     "price": 380,
+    "rate": 3800,
     "description": "1 Box",
-    "keywords": "Violet Vulture / Red Virgina, Mega Sky Shots, Violet Vulture / Red Virgina Sivakasi",
-    "rate": 3800
+    "keywords": "Violet Vulture / Red Virgina, Mega Sky Shots, Violet Vulture / Red Virgina Sivakasi"
   },
   {
     "id": 31,
     "name": "Red Shower / Twin Treasure",
     "category": "mega-sky-shots-1",
     "price": 380,
+    "rate": 3800,
     "description": "1 Box",
-    "keywords": "Red Shower / Twin Treasure, Mega Sky Shots, Red Shower / Twin Treasure Sivakasi",
-    "rate": 3800
+    "keywords": "Red Shower / Twin Treasure, Mega Sky Shots, Red Shower / Twin Treasure Sivakasi"
   },
   {
     "id": 32,
     "name": "Palm Tree / Golden Arrow",
     "category": "mega-sky-shots-1",
     "price": 380,
+    "rate": 3800,
     "description": "1 Box",
-    "keywords": "Palm Tree / Golden Arrow, Mega Sky Shots, Palm Tree / Golden Arrow Sivakasi",
-    "rate": 3800
+    "keywords": "Palm Tree / Golden Arrow, Mega Sky Shots, Palm Tree / Golden Arrow Sivakasi"
   },
   {
     "id": 33,
     "name": "Beauty Queen / Digital Plus",
     "category": "mega-sky-shots-1",
     "price": 380,
+    "rate": 3800,
     "description": "1 Box",
-    "keywords": "Beauty Queen / Digital Plus, Mega Sky Shots, Beauty Queen / Digital Plus Sivakasi",
-    "rate": 3800
+    "keywords": "Beauty Queen / Digital Plus, Mega Sky Shots, Beauty Queen / Digital Plus Sivakasi"
   },
   {
     "id": 34,
     "name": "Blue Horse",
     "category": "mega-sky-shots-boom",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
     "keywords": "Blue Horse, Mega Sky Shot With Boom Effect, Blue Horse Sivakasi",
-    "rate": 3950,
     "video": "https://www.instagram.com/reel/DNI4PXwhwFX/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -318,45 +318,45 @@
     "name": "Adventure",
     "category": "mega-sky-shots-boom",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Adventure, Mega Sky Shot With Boom Effect, Adventure Sivakasi",
-    "rate": 3950
+    "keywords": "Adventure, Mega Sky Shot With Boom Effect, Adventure Sivakasi"
   },
   {
     "id": 36,
     "name": "Royal Salute",
     "category": "mega-sky-shots-boom",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Royal Salute, Mega Sky Shot With Boom Effect, Royal Salute Sivakasi",
-    "rate": 3950
+    "keywords": "Royal Salute, Mega Sky Shot With Boom Effect, Royal Salute Sivakasi"
   },
   {
     "id": 37,
     "name": "Nile Blast",
     "category": "mega-sky-shots-boom",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Nile Blast, Mega Sky Shot With Boom Effect, Nile Blast Sivakasi",
-    "rate": 3950
+    "keywords": "Nile Blast, Mega Sky Shot With Boom Effect, Nile Blast Sivakasi"
   },
   {
     "id": 38,
     "name": "Night Wonder",
     "category": "mega-sky-shots-boom",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Night Wonder, Mega Sky Shot With Boom Effect, Night Wonder Sivakasi",
-    "rate": 3950
+    "keywords": "Night Wonder, Mega Sky Shot With Boom Effect, Night Wonder Sivakasi"
   },
   {
     "id": 39,
     "name": "Trouble Double",
     "category": "mega-sky-shots-7wonder",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
     "keywords": "Trouble Double, Mega Sky Shots - 7 Step / Wonder Function, Trouble Double Sivakasi",
-    "rate": 3950,
     "video": "https://www.instagram.com/reel/DNcQtnXv3Xj/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -364,45 +364,45 @@
     "name": "Red Rider",
     "category": "mega-sky-shots-7wonder",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Red Rider, Mega Sky Shots - 7 Step / Wonder Function, Red Rider Sivakasi",
-    "rate": 3950
+    "keywords": "Red Rider, Mega Sky Shots - 7 Step / Wonder Function, Red Rider Sivakasi"
   },
   {
     "id": 41,
     "name": "Tom Rider / Glittering Gems",
     "category": "mega-sky-shots-7wonder",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Tom Rider / Glittering Gems, Mega Sky Shots - 7 Step / Wonder Function, Tom Rider / Glittering Gems Sivakasi",
-    "rate": 3950
+    "keywords": "Tom Rider / Glittering Gems, Mega Sky Shots - 7 Step / Wonder Function, Tom Rider / Glittering Gems Sivakasi"
   },
   {
     "id": 42,
     "name": "Golden Guns",
     "category": "mega-sky-shots-7wonder",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Golden Guns, Mega Sky Shots - 7 Step / Wonder Function, Golden Guns Sivakasi",
-    "rate": 3950
+    "keywords": "Golden Guns, Mega Sky Shots - 7 Step / Wonder Function, Golden Guns Sivakasi"
   },
   {
     "id": 43,
     "name": "Green Emirates",
     "category": "mega-sky-shots-7wonder",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
-    "keywords": "Green Emirates, Mega Sky Shots - 7 Step / Wonder Function, Green Emirates Sivakasi",
-    "rate": 3950
+    "keywords": "Green Emirates, Mega Sky Shots - 7 Step / Wonder Function, Green Emirates Sivakasi"
   },
   {
     "id": 44,
     "name": "Nayagara with Golden Effect",
     "category": "mega-sky-shots-special",
     "price": 395,
+    "rate": 3950,
     "description": "1 Box",
     "keywords": "Nayagara with Golden Effect, Special Mega Sky Shot, Nayagara with Golden Effect Sivakasi",
-    "rate": 3950,
     "video": "https://www.instagram.com/reel/DN3gwTMQotl/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -410,54 +410,54 @@
     "name": "Special Nayagara with Tail Colors",
     "category": "mega-sky-shots-special",
     "price": 420,
+    "rate": 4300,
     "description": "1 Box",
-    "keywords": "Special Nayagara with Tail Colors, Special Mega Sky Shot, Special Nayagara with Tail Colors Sivakasi",
-    "rate": 4300
+    "keywords": "Special Nayagara with Tail Colors, Special Mega Sky Shot, Special Nayagara with Tail Colors Sivakasi"
   },
   {
     "id": 46,
     "name": "Ayyan Pink",
     "category": "mega-sky-shots-special",
     "price": 550,
+    "rate": 5550,
     "description": "1 Box",
-    "keywords": "Ayyan Pink, Special Mega Sky Shot, Ayyan Pink Sivakasi",
-    "rate": 5550
+    "keywords": "Ayyan Pink, Special Mega Sky Shot, Ayyan Pink Sivakasi"
   },
   {
     "id": 47,
     "name": "Double Ball - Mega Shot",
     "category": "mega-sky-shots-5",
     "price": 590,
+    "rate": 5900,
     "description": "1 Box",
-    "keywords": "Double Ball - Mega Shot, Double Ball / Ultra Mega Sky Shot, Double Ball - Mega Shot Sivakasi",
-    "rate": 5900
+    "keywords": "Double Ball - Mega Shot, Double Ball / Ultra Mega Sky Shot, Double Ball - Mega Shot Sivakasi"
   },
   {
     "id": 48,
     "name": "Ultra Mega Shot",
     "category": "mega-sky-shots-5",
     "price": 1400,
+    "rate": 14000,
     "description": "1 Box",
-    "keywords": "Ultra Mega Shot, Double Ball / Ultra Mega Sky Shot, Ultra Mega Shot Sivakasi",
-    "rate": 14000
+    "keywords": "Ultra Mega Shot, Double Ball / Ultra Mega Sky Shot, Ultra Mega Shot Sivakasi"
   },
   {
     "id": 49,
     "name": "12 shot - Gold Gliterring Effect",
     "category": "repeating-shots",
     "price": 160,
+    "rate": 1600,
     "description": "1 Box",
-    "keywords": "12 shot - Gold Gliterring Effect, Repeating Shots With Crackling Effect, 12 shot - Gold Gliterring Effect Sivakasi",
-    "rate": 1600
+    "keywords": "12 shot - Gold Gliterring Effect, Repeating Shots With Crackling Effect, 12 shot - Gold Gliterring Effect Sivakasi"
   },
   {
     "id": 50,
     "name": "Love - Multi color - Peacock Style",
     "category": "repeating-shots",
     "price": 135,
+    "rate": 1300,
     "description": "1 Box",
     "keywords": "Love - Multi color - Peacock Style, Repeating Shots With Crackling Effect, Love - Multi color - Peacock Style Sivakasi",
-    "rate": 1300,
     "video": "https://www.instagram.com/reel/DNTRT66BIJ6/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -530,72 +530,72 @@
     "name": "Mini Siren (5 pcs) - Whistle Sound",
     "category": "whistle-fountain",
     "price": 140,
+    "rate": 1400,
     "description": "1 Box",
-    "keywords": "Mini Siren 5 pcs - Whistle Sound, Whistle Fountain Series, Mini Siren 5 pcs - Whistle Sound Sivakasi",
-    "rate": 1400
+    "keywords": "Mini Siren 5 pcs - Whistle Sound, Whistle Fountain Series, Mini Siren 5 pcs - Whistle Sound Sivakasi"
   },
   {
     "id": 60,
     "name": "Mega Siren (3 pcs) - Whistle Sound",
     "category": "whistle-fountain",
     "price": 220,
+    "rate": 2200,
     "description": "1 Box",
-    "keywords": "Mega Siren 3 pcs - Whistle Sound, Whistle Fountain Series, Mega Siren 3 pcs - Whistle Sound Sivakasi",
-    "rate": 2200
+    "keywords": "Mega Siren 3 pcs - Whistle Sound, Whistle Fountain Series, Mega Siren 3 pcs - Whistle Sound Sivakasi"
   },
   {
     "id": 61,
     "name": "Kitkat / Chitu Putu",
     "category": "kids-collection",
     "price": 30,
+    "rate": 300,
     "description": "1 Box",
-    "keywords": "Kitkat / Chitu Putu, Night Crackers / Fountain, Kitkat / Chitu Putu Sivakasi",
-    "rate": 300
+    "keywords": "Kitkat / Chitu Putu, Night Crackers / Fountain, Kitkat / Chitu Putu Sivakasi"
   },
   {
     "id": 62,
     "name": "Toy Story - 5 Different Colors",
     "category": "kids-collection",
     "price": 65,
+    "rate": 650,
     "description": "1 Box",
-    "keywords": "Toy Story - 5 Different Colors, Night Crackers / Fountain, Toy Story - 5 Different Colors Sivakasi",
-    "rate": 650
+    "keywords": "Toy Story - 5 Different Colors, Night Crackers / Fountain, Toy Story - 5 Different Colors Sivakasi"
   },
   {
     "id": 63,
     "name": "Photo Flash",
     "category": "kids-collection",
     "price": 68,
+    "rate": 680,
     "description": "1 Box",
-    "keywords": "Photo Flash, Night Crackers / Fountain, Photo Flash Sivakasi",
-    "rate": 680
+    "keywords": "Photo Flash, Night Crackers / Fountain, Photo Flash Sivakasi"
   },
   {
     "id": 64,
     "name": "Color Fun Zone - Single pcs with Crackling - Spl",
     "category": "kids-collection",
     "price": 110,
+    "rate": 1100,
     "description": "1 Pcs",
-    "keywords": "Color Fun Zone - Single pcs with Crackling - Spl, Night Crackers / Fountain, Color Fun Zone - Single pcs with Crackling - Spl Sivakasi",
-    "rate": 1100
+    "keywords": "Color Fun Zone - Single pcs with Crackling - Spl, Night Crackers / Fountain, Color Fun Zone - Single pcs with Crackling - Spl Sivakasi"
   },
   {
     "id": 65,
     "name": "Helicopter - 5 pcs",
     "category": "kids-collection",
     "price": 120,
+    "rate": 1150,
     "description": "1 Box",
-    "keywords": "Helicopter - 5 pcs, Night Crackers / Fountain, Helicopter - 5 pcs Sivakasi",
-    "rate": 1150
+    "keywords": "Helicopter - 5 pcs, Night Crackers / Fountain, Helicopter - 5 pcs Sivakasi"
   },
   {
     "id": 66,
     "name": "Golden Rain - 5 pcs",
     "category": "kids-collection",
     "price": 100,
+    "rate": 1000,
     "description": "1 Box",
     "keywords": "Golden Rain - 5 pcs, Night Crackers / Fountain, Golden Rain - 5 pcs Sivakasi",
-    "rate": 1000,
     "video": "https://www.instagram.com/reel/DMVfA0zhBkz/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -603,171 +603,171 @@
     "name": "Feather - 5 pcs",
     "category": "kids-collection",
     "price": 100,
+    "rate": 1000,
     "description": "1 Box",
-    "keywords": "Feather - 5 pcs, Night Crackers / Fountain, Feather - 5 pcs Sivakasi",
-    "rate": 1000
+    "keywords": "Feather - 5 pcs, Night Crackers / Fountain, Feather - 5 pcs Sivakasi"
   },
   {
     "id": 68,
     "name": "Cock Tail - 3 pcs",
     "category": "kids-collection",
     "price": 130,
+    "rate": 1250,
     "description": "1 Box",
-    "keywords": "Cock Tail - 3 pcs, Night Crackers / Fountain, Cock Tail - 3 pcs Sivakasi",
-    "rate": 1250
+    "keywords": "Cock Tail - 3 pcs, Night Crackers / Fountain, Cock Tail - 3 pcs Sivakasi"
   },
   {
     "id": 69,
     "name": "Gold Rush - 3 pcs",
     "category": "kids-collection",
     "price": 130,
+    "rate": 1250,
     "description": "1 Box",
-    "keywords": "Gold Rush - 3 pcs, Night Crackers / Fountain, Gold Rush - 3 pcs Sivakasi",
-    "rate": 1250
+    "keywords": "Gold Rush - 3 pcs, Night Crackers / Fountain, Gold Rush - 3 pcs Sivakasi"
   },
   {
     "id": 70,
     "name": "Magic Tree - 3 pcs",
     "category": "kids-collection",
     "price": 130,
+    "rate": 1250,
     "description": "1 Box",
-    "keywords": "Magic Tree - 3 pcs, Night Crackers / Fountain, Magic Tree - 3 pcs Sivakasi",
-    "rate": 1250
+    "keywords": "Magic Tree - 3 pcs, Night Crackers / Fountain, Magic Tree - 3 pcs Sivakasi"
   },
   {
     "id": 71,
     "name": "X-Max Tree - 3 pcs",
     "category": "kids-collection",
     "price": 175,
+    "rate": 1700,
     "description": "1 Box",
-    "keywords": "X-Max Tree - 3 pcs, Night Crackers / Fountain, X-Max Tree - 3 pcs Sivakasi",
-    "rate": 1700
+    "keywords": "X-Max Tree - 3 pcs, Night Crackers / Fountain, X-Max Tree - 3 pcs Sivakasi"
   },
   {
     "id": 72,
     "name": "Golden Ashrafi - 3 pcs",
     "category": "kids-collection",
     "price": 175,
+    "rate": 1700,
     "description": "1 Box",
-    "keywords": "Golden Ashrafi - 3 pcs, Night Crackers / Fountain, Golden Ashrafi - 3 pcs Sivakasi",
-    "rate": 1700
+    "keywords": "Golden Ashrafi - 3 pcs, Night Crackers / Fountain, Golden Ashrafi - 3 pcs Sivakasi"
   },
   {
     "id": 73,
     "name": "Ashrafi Koti - 3 pcs",
     "category": "kids-collection",
     "price": 175,
+    "rate": 1700,
     "description": "1 Box",
-    "keywords": "Ashrafi Koti - 3 pcs, Night Crackers / Fountain, Ashrafi Koti - 3 pcs Sivakasi",
-    "rate": 1700
+    "keywords": "Ashrafi Koti - 3 pcs, Night Crackers / Fountain, Ashrafi Koti - 3 pcs Sivakasi"
   },
   {
     "id": 74,
     "name": "Red Mela",
     "category": "colorful-night-1",
     "price": 135,
+    "rate": 1350,
     "description": "1 Box",
-    "keywords": "Red Mela, Night Crackers - Kids Zone 2, Red Mela Sivakasi",
-    "rate": 1350
+    "keywords": "Red Mela, Night Crackers - Kids Zone 2, Red Mela Sivakasi"
   },
   {
     "id": 75,
     "name": "Green City",
     "category": "colorful-night-1",
     "price": 135,
+    "rate": 1350,
     "description": "1 Box",
-    "keywords": "Green City, Night Crackers - Kids Zone 2, Green City Sivakasi",
-    "rate": 1350
+    "keywords": "Green City, Night Crackers - Kids Zone 2, Green City Sivakasi"
   },
   {
     "id": 76,
     "name": "Pop Fun / Water Queen",
     "category": "colorful-night-1",
     "price": 135,
+    "rate": 1350,
     "description": "1 Box",
-    "keywords": "Pop Fun / Water Queen, Night Crackers - Kids Zone 2, Pop Fun / Water Queen Sivakasi",
-    "rate": 1350
+    "keywords": "Pop Fun / Water Queen, Night Crackers - Kids Zone 2, Pop Fun / Water Queen Sivakasi"
   },
   {
     "id": 77,
     "name": "Star War",
     "category": "colorful-night-1",
     "price": 135,
+    "rate": 1350,
     "description": "1 Box",
-    "keywords": "Star War, Night Crackers - Kids Zone 2, Star War Sivakasi",
-    "rate": 1350
+    "keywords": "Star War, Night Crackers - Kids Zone 2, Star War Sivakasi"
   },
   {
     "id": 78,
     "name": "Lemon tree - Double Function - Silver",
     "category": "colorful-night-2",
     "price": 130,
+    "rate": 1300,
     "description": "1 Box",
-    "keywords": "Lemon tree - Double Function - Silver, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Silver Sivakasi",
-    "rate": 1300
+    "keywords": "Lemon tree - Double Function - Silver, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Silver Sivakasi"
   },
   {
     "id": 79,
     "name": "Lemon tree - Double Function - Amber",
     "category": "colorful-night-2",
     "price": 130,
+    "rate": 1300,
     "description": "1 Box",
-    "keywords": "Lemon tree - Double Function - Amber, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Amber Sivakasi",
-    "rate": 1300
+    "keywords": "Lemon tree - Double Function - Amber, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Amber Sivakasi"
   },
   {
     "id": 80,
     "name": "Lemon tree - Double Function - Yellow",
     "category": "colorful-night-2",
     "price": 130,
+    "rate": 1300,
     "description": "1 Box",
-    "keywords": "Lemon tree - Double Function - Yellow, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Yellow Sivakasi",
-    "rate": 1300
+    "keywords": "Lemon tree - Double Function - Yellow, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Yellow Sivakasi"
   },
   {
     "id": 81,
     "name": "Lemon tree - Double Function - Purple",
     "category": "colorful-night-2",
     "price": 145,
+    "rate": 1450,
     "description": "1 Box",
-    "keywords": "Lemon tree - Double Function - Purple, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Purple Sivakasi",
-    "rate": 1450
+    "keywords": "Lemon tree - Double Function - Purple, Night Crackers - Kids Zone 3, Lemon tree - Double Function - Purple Sivakasi"
   },
   {
     "id": 82,
     "name": "White Mojitio",
     "category": "chilled-mojito",
     "price": 165,
+    "rate": 1650,
     "description": "1 Tin",
-    "keywords": "White Mojitio, Chilled Mojitio - Special Fountain, White Mojitio Sivakasi",
-    "rate": 1650
+    "keywords": "White Mojitio, Chilled Mojitio - Special Fountain, White Mojitio Sivakasi"
   },
   {
     "id": 83,
     "name": "Red Mojitio",
     "category": "chilled-mojito",
     "price": 165,
+    "rate": 1650,
     "description": "1 Tin",
-    "keywords": "Red Mojitio, Chilled Mojitio - Special Fountain, Red Mojitio Sivakasi",
-    "rate": 1650
+    "keywords": "Red Mojitio, Chilled Mojitio - Special Fountain, Red Mojitio Sivakasi"
   },
   {
     "id": 84,
     "name": "Green Mojitio",
     "category": "chilled-mojito",
     "price": 165,
+    "rate": 1650,
     "description": "1 Tin",
-    "keywords": "Green Mojitio, Chilled Mojitio - Special Fountain, Green Mojitio Sivakasi",
-    "rate": 1650
+    "keywords": "Green Mojitio, Chilled Mojitio - Special Fountain, Green Mojitio Sivakasi"
   },
   {
     "id": 85,
     "name": "Sun Flower Pops - 5 pcs",
     "category": "special-fountain",
     "price": 360,
+    "rate": 3600,
     "description": "1 Box",
     "keywords": "Sun Flower Pops - 5 pcs, Unique & Special Fountain (Limited Only), Sun Flower Pops - 5 pcs Sivakasi",
-    "rate": 3600,
     "video": "https://www.instagram.com/reel/DceHYX2BmdA/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
   },
   {
@@ -775,201 +775,210 @@
     "name": "Super Six - 5 pcs",
     "category": "special-fountain",
     "price": 400,
+    "rate": 4000,
     "description": "1 Box",
-    "keywords": "Super Six - 5 pcs, Unique & Special Fountain (Limited Only), Super Six - 5 pcs Sivakasi",
-    "rate": 4000
+    "keywords": "Super Six - 5 pcs, Unique & Special Fountain (Limited Only), Super Six - 5 pcs Sivakasi"
   },
   {
     "id": 87,
     "name": "Mojitio - Mass Crackling - 4 pcs",
     "category": "special-fountain",
     "price": 490,
+    "rate": 4900,
     "description": "1 Box",
-    "keywords": "Mojitio - Mass Crackling - 4 pcs, Unique & Special Fountain (Limited Only), Mojitio - Mass Crackling - 4 pcs Sivakasi",
-    "rate": 4900
+    "keywords": "Mojitio - Mass Crackling - 4 pcs, Unique & Special Fountain (Limited Only), Mojitio - Mass Crackling - 4 pcs Sivakasi"
   },
   {
     "id": 88,
     "name": "Color Fun Zone - 5 pcs - Gift Pack - Spl",
     "category": "special-fountain",
     "price": 500,
+    "rate": 5000,
     "description": "1 Box",
-    "keywords": "Color Fun Zone - 5 pcs - Gift Pack - Spl, Unique & Special Fountain (Limited Only), Color Fun Zone - 5 pcs - Gift Pack - Spl Sivakasi",
-    "rate": 5000
+    "keywords": "Color Fun Zone - 5 pcs - Gift Pack - Spl, Unique & Special Fountain (Limited Only), Color Fun Zone - 5 pcs - Gift Pack - Spl Sivakasi"
   },
   {
     "id": 89,
-    "name": "Dancing Peacock - 4 Different Color Varities",
-    "category": "peacock-series",
-    "price": 260,
+    "name": "Fountain with Color Wheel - 5 pcs",
+    "category": "special-fountain",
+    "price": 200,
+    "rate": 2000,
     "description": "1 Box",
-    "keywords": "Dancing Peacock - 4 Different Color Varities, Mini & Mega Peacock, Dancing Peacock - 4 Different Color Varities Sivakasi",
-    "rate": 2600
+    "keywords": "Fountain with Color Wheel - 5 pcs, Unique & Special Fountain (Limited Only), Fountain with Color Wheel - 5 pcs Sivakasi"
   },
   {
     "id": 90,
-    "name": "Mega / Bada Peacock",
+    "name": "Dancing Peacock - 4 Different Color Varities",
     "category": "peacock-series",
-    "price": 400,
+    "price": 260,
+    "rate": 2600,
     "description": "1 Box",
-    "keywords": "Mega / Bada Peacock, Mini & Mega Peacock, Mega / Bada Peacock Sivakasi",
-    "rate": 4000
+    "keywords": "Dancing Peacock - 4 Different Color Varities, Mini & Mega Peacock, Dancing Peacock - 4 Different Color Varities Sivakasi"
   },
   {
     "id": 91,
-    "name": "Full Crackling Fountain - 3 pcs",
+    "name": "Mega / Bada Peacock",
     "category": "peacock-series",
-    "price": 280,
+    "price": 400,
+    "rate": 4000,
     "description": "1 Box",
-    "keywords": "Full Crackling Fountain - 3 pcs, Mini & Mega Peacock, Full Crackling Fountain - 3 pcs Sivakasi",
-    "rate": 2800
+    "keywords": "Mega / Bada Peacock, Mini & Mega Peacock, Mega / Bada Peacock Sivakasi"
   },
   {
     "id": 92,
-    "name": "12 cm Electric Sparklers",
-    "category": "sparklers",
-    "price": 26,
+    "name": "Full Crackling Fountain - 3 pcs",
+    "category": "peacock-series",
+    "price": 280,
+    "rate": 2800,
     "description": "1 Box",
-    "keywords": "12 cm Electric Sparklers, Sparklers Festival, 12 cm Electric Sparklers Sivakasi",
-    "rate": 260
+    "keywords": "Full Crackling Fountain - 3 pcs, Mini & Mega Peacock, Full Crackling Fountain - 3 pcs Sivakasi"
   },
   {
     "id": 93,
-    "name": "12 cm Colors Sparklers",
+    "name": "12 cm Electric Sparklers",
     "category": "sparklers",
-    "price": 30,
+    "price": 26,
+    "rate": 260,
     "description": "1 Box",
-    "keywords": "12 cm Colors Sparklers, Sparklers Festival, 12 cm Colors Sparklers Sivakasi",
-    "rate": 300
+    "keywords": "12 cm Electric Sparklers, Sparklers Festival, 12 cm Electric Sparklers Sivakasi"
   },
   {
     "id": 94,
-    "name": "12 cm Green Sparklers",
+    "name": "12 cm Colors Sparklers",
     "category": "sparklers",
-    "price": 32,
+    "price": 30,
+    "rate": 300,
     "description": "1 Box",
-    "keywords": "12 cm Green Sparklers, Sparklers Festival, 12 cm Green Sparklers Sivakasi",
-    "rate": 320
+    "keywords": "12 cm Colors Sparklers, Sparklers Festival, 12 cm Colors Sparklers Sivakasi"
   },
   {
     "id": 95,
-    "name": "12 cm Red Sparklers",
+    "name": "12 cm Green Sparklers",
     "category": "sparklers",
-    "price": 36,
+    "price": 32,
+    "rate": 320,
     "description": "1 Box",
-    "keywords": "12 cm Red Sparklers, Sparklers Festival, 12 cm Red Sparklers Sivakasi",
-    "rate": 360
+    "keywords": "12 cm Green Sparklers, Sparklers Festival, 12 cm Green Sparklers Sivakasi"
   },
   {
     "id": 96,
-    "name": "15 cm Electric Sparklers",
+    "name": "12 cm Red Sparklers",
     "category": "sparklers",
-    "price": 42,
+    "price": 36,
+    "rate": 360,
     "description": "1 Box",
-    "keywords": "15 cm Electric Sparklers, Sparklers Festival, 15 cm Electric Sparklers Sivakasi",
-    "rate": 420
+    "keywords": "12 cm Red Sparklers, Sparklers Festival, 12 cm Red Sparklers Sivakasi"
   },
   {
     "id": 97,
-    "name": "15 cm Colors Sparklers",
+    "name": "15 cm Electric Sparklers",
     "category": "sparklers",
-    "price": 46,
+    "price": 42,
+    "rate": 420,
     "description": "1 Box",
-    "keywords": "15 cm Colors Sparklers, Sparklers Festival, 15 cm Colors Sparklers Sivakasi",
-    "rate": 460
+    "keywords": "15 cm Electric Sparklers, Sparklers Festival, 15 cm Electric Sparklers Sivakasi"
   },
   {
     "id": 98,
-    "name": "15 cm Green Sparklers",
+    "name": "15 cm Colors Sparklers",
     "category": "sparklers",
-    "price": 50,
+    "price": 46,
+    "rate": 460,
     "description": "1 Box",
-    "keywords": "15 cm Green Sparklers, Sparklers Festival, 15 cm Green Sparklers Sivakasi",
-    "rate": 500
+    "keywords": "15 cm Colors Sparklers, Sparklers Festival, 15 cm Colors Sparklers Sivakasi"
   },
   {
     "id": 99,
-    "name": "15 cm Red Sparklers",
+    "name": "15 cm Green Sparklers",
     "category": "sparklers",
-    "price": 56,
+    "price": 50,
+    "rate": 500,
     "description": "1 Box",
-    "keywords": "15 cm Red Sparklers, Sparklers Festival, 15 cm Red Sparklers Sivakasi",
-    "rate": 560
+    "keywords": "15 cm Green Sparklers, Sparklers Festival, 15 cm Green Sparklers Sivakasi"
   },
   {
     "id": 100,
-    "name": "30 cm Electric Sparklers",
+    "name": "15 cm Red Sparklers",
     "category": "sparklers",
-    "price": 42,
+    "price": 56,
+    "rate": 560,
     "description": "1 Box",
-    "keywords": "30 cm Electric Sparklers, Sparklers Festival, 30 cm Electric Sparklers Sivakasi",
-    "rate": 420
+    "keywords": "15 cm Red Sparklers, Sparklers Festival, 15 cm Red Sparklers Sivakasi"
   },
   {
     "id": 101,
-    "name": "30 cm Colors Sparklers",
+    "name": "30 cm Electric Sparklers",
     "category": "sparklers",
-    "price": 46,
+    "price": 42,
+    "rate": 420,
     "description": "1 Box",
-    "keywords": "30 cm Colors Sparklers, Sparklers Festival, 30 cm Colors Sparklers Sivakasi",
-    "rate": 460
+    "keywords": "30 cm Electric Sparklers, Sparklers Festival, 30 cm Electric Sparklers Sivakasi"
   },
   {
     "id": 102,
-    "name": "30 cm Green Sparklers",
+    "name": "30 cm Colors Sparklers",
     "category": "sparklers",
-    "price": 50,
+    "price": 46,
+    "rate": 460,
     "description": "1 Box",
-    "keywords": "30 cm Green Sparklers, Sparklers Festival, 30 cm Green Sparklers Sivakasi",
-    "rate": 500
+    "keywords": "30 cm Colors Sparklers, Sparklers Festival, 30 cm Colors Sparklers Sivakasi"
   },
   {
     "id": 103,
-    "name": "30 cm Red Sparklers",
+    "name": "30 cm Green Sparklers",
     "category": "sparklers",
-    "price": 56,
+    "price": 50,
+    "rate": 500,
     "description": "1 Box",
-    "keywords": "30 cm Red Sparklers, Sparklers Festival, 30 cm Red Sparklers Sivakasi",
-    "rate": 560
+    "keywords": "30 cm Green Sparklers, Sparklers Festival, 30 cm Green Sparklers Sivakasi"
   },
   {
     "id": 104,
-    "name": "50 cm Electric Sparklers",
+    "name": "30 cm Red Sparklers",
     "category": "sparklers",
-    "price": 160,
+    "price": 56,
+    "rate": 560,
     "description": "1 Box",
-    "keywords": "50 cm Electric Sparklers, Sparklers Festival, 50 cm Electric Sparklers Sivakasi",
-    "rate": 1600
+    "keywords": "30 cm Red Sparklers, Sparklers Festival, 30 cm Red Sparklers Sivakasi"
   },
   {
     "id": 105,
-    "name": "50 cm Color Sparklers",
+    "name": "50 cm Electric Sparklers",
     "category": "sparklers",
-    "price": 180,
+    "price": 160,
+    "rate": 1600,
     "description": "1 Box",
-    "keywords": "50 cm Color Sparklers, Sparklers Festival, 50 cm Color Sparklers Sivakasi",
-    "rate": 1800
+    "keywords": "50 cm Electric Sparklers, Sparklers Festival, 50 cm Electric Sparklers Sivakasi"
   },
   {
     "id": 106,
-    "name": "Rotating Sparklers",
+    "name": "50 cm Color Sparklers",
     "category": "sparklers",
-    "price": 200,
+    "price": 180,
+    "rate": 1800,
     "description": "1 Box",
-    "keywords": "Rotating Sparklers, Sparklers Festival, Rotating Sparklers Sivakasi",
-    "rate": 2000
+    "keywords": "50 cm Color Sparklers, Sparklers Festival, 50 cm Color Sparklers Sivakasi"
   },
   {
     "id": 107,
-    "name": "10 in 1 Match Box",
-    "category": "match-boxes",
-    "price": 180,
+    "name": "Rotating Sparklers",
+    "category": "sparklers",
+    "price": 200,
+    "rate": 2000,
     "description": "1 Box",
-    "keywords": "10 in 1 Match Box, Match Boxes, 10 in 1 Match Box Sivakasi",
-    "rate": 1800
+    "keywords": "Rotating Sparklers, Sparklers Festival, Rotating Sparklers Sivakasi"
   },
   {
     "id": 108,
+    "name": "10 in 1 Match Box",
+    "category": "match-boxes",
+    "price": 180,
+    "rate": 1800,
+    "description": "1 Box",
+    "keywords": "10 in 1 Match Box, Match Boxes, 10 in 1 Match Box Sivakasi"
+  },
+  {
+    "id": 109,
     "name": "1000 Half Count",
     "category": "festival-crackers",
     "price": 200,
@@ -977,7 +986,7 @@
     "keywords": "1000 Half Count, Festival Crackers, 1000 Half Count Sivakasi"
   },
   {
-    "id": 109,
+    "id": 110,
     "name": "1000 Full Count",
     "category": "festival-crackers",
     "price": 400,
@@ -985,7 +994,7 @@
     "keywords": "1000 Full Count, Festival Crackers, 1000 Full Count Sivakasi"
   },
   {
-    "id": 110,
+    "id": 111,
     "name": "5000 Half Count",
     "category": "festival-crackers",
     "price": 1000,
@@ -993,7 +1002,7 @@
     "keywords": "5000 Half Count, Festival Crackers, 5000 Half Count Sivakasi"
   },
   {
-    "id": 111,
+    "id": 112,
     "name": "5000 Full Count",
     "category": "festival-crackers",
     "price": 2000,
@@ -1001,7 +1010,7 @@
     "keywords": "5000 Full Count, Festival Crackers, 5000 Full Count Sivakasi"
   },
   {
-    "id": 112,
+    "id": 113,
     "name": "Siva Parvathy - 32 Items",
     "category": "gift-boxes",
     "price": 600,
@@ -1009,7 +1018,7 @@
     "keywords": "Siva Parvathy - 32 Items, Gift Boxes - Limited Pcs Only, Siva Parvathy - 32 Items Sivakasi"
   },
   {
-    "id": 113,
+    "id": 114,
     "name": "Tirupathi / Tusker - 50 Items",
     "category": "gift-boxes",
     "price": 1000,
@@ -1017,7 +1026,7 @@
     "keywords": "Tirupathi / Tusker - 50 Items, Gift Boxes - Limited Pcs Only, Tirupathi / Tusker - 50 Items Sivakasi"
   },
   {
-    "id": 114,
+    "id": 115,
     "name": "Diwali Dhamaka Festival Pack",
     "category": "combo-packs",
     "price": 3500,
@@ -1025,7 +1034,7 @@
     "keywords": "Diwali Dhamaka Festival Pack, Combo Festival Packs, Diwali Dhamaka Festival Pack Sivakasi"
   },
   {
-    "id": 115,
+    "id": 116,
     "name": "Family Kondattam Pack",
     "category": "combo-packs",
     "price": 5500,
@@ -1033,7 +1042,7 @@
     "keywords": "Family Kondattam Pack, Combo Festival Packs, Family Kondattam Pack Sivakasi"
   },
   {
-    "id": 116,
+    "id": 117,
     "name": "Thala Diwali Pack",
     "category": "combo-packs",
     "price": 10500,
@@ -1041,7 +1050,7 @@
     "keywords": "Thala Diwali Pack, Combo Festival Packs, Thala Diwali Pack Sivakasi"
   },
   {
-    "id": 117,
+    "id": 118,
     "name": "Thala Thalapathi Pack",
     "category": "combo-packs",
     "price": 20500,
